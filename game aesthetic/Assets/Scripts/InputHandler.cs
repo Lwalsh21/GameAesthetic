@@ -10,8 +10,8 @@ public class InputHandler : MonoBehaviour
 	private InputAction _moveAction, _lookAction;
     void Start()
     {
-       _moveAction = InputSystme.action.FindAction("Move")
-	   _lookAction = InputSystme.action.FindAction("Look")
+       _moveAction = InputSystem.actions.FindAction("Move")
+	   _lookAction = InputSystem.actions.FindAction("Look")
 	   
 	   Cursor.visible - false;
     }
