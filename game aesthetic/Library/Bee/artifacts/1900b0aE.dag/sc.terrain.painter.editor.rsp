@@ -347,10 +347,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/ProceduralTerrainPainter/Editor/HeatmapPreview.cs"
-"Assets/ProceduralTerrainPainter/Editor/ModifierEditor.cs"
-"Assets/ProceduralTerrainPainter/Editor/PropertyDrawers.cs"
-"Assets/ProceduralTerrainPainter/Editor/TerrainPainterInspector.cs"
+"Assets/Stuff/ProceduralTerrainPainter/Editor/HeatmapPreview.cs"
+"Assets/Stuff/ProceduralTerrainPainter/Editor/ModifierEditor.cs"
+"Assets/Stuff/ProceduralTerrainPainter/Editor/PropertyDrawers.cs"
+"Assets/Stuff/ProceduralTerrainPainter/Editor/TerrainPainterInspector.cs"
 -langversion:9.0
 
 /deterministic
