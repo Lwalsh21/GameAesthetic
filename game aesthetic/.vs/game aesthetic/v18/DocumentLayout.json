@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|c:\\users\\liamw\\onedrive\\documents\\github\\gameaesthetic\\game aesthetic\\assets\\scripts\\unitselectionbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unitselectionbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|c:\\users\\liamw\\onedrive\\documents\\github\\gameaesthetic\\game aesthetic\\assets\\scripts\\unitselectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unitselectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\UnitMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UnitSelectionBox.cs",
+              "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitSelectionBox.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UnitSelectionBox.cs",
+              "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitSelectionBox.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UnitSelectionBox.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T02:53:41.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UnitSelectionManager.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitSelectionManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UnitSelectionManager.cs",
               "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitSelectionManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\UnitSelectionManager.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAowD8AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAcwHMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-11T22:06:24.386Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitMovement.cs",
+              "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UnitMovement.cs",
+              "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UnitMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACySURBVDhPYxgFEHDjxY3/Xqvc/wtO5P1vvdji/40X1/9DpcBg3rm5cD4yGw6sF5v/bz7UAJZoAtIgw8ASUAAyGMpEYYMAI4gACb7P/wxmg4DuXM3/l5OvM4JsKz5cABVFBa6y7gyrgtZA9KCbig7wuYAJSpMNsBoA8gKIBnkBZiOIRmaHrQtBuMQTGGjNhxvBAk1AGhQTYAkoQHY2MhsOQNFotcgcbIPnSjfSo3FEAwYGAA95Yu3hOJS9AAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-04-12T02:53:40.243Z"
             }
           ]
         }

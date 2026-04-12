@@ -20,7 +20,7 @@ public class UnitMovement : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             RaycastHit hit;
-            Ray ray = cam.ScreenPointToRay(input.mousePosition);
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground))
             {
