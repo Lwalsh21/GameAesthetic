@@ -9,6 +9,8 @@ public class UnitMovement : MonoBehaviour
     NavMeshAgent agent;
     public LayerMask ground;
 
+    public bool movementCommandGiven;
+
     private void Start()
     {
         cam = Camera.main;
@@ -26,6 +28,11 @@ public class UnitMovement : MonoBehaviour
             {
                 agent.SetDestination(hit.point);
             }
+        }
+
+        if (agent.hasPath == false || agent.remainingDistance <= agent.stoppingDistance)
+        {
+            movementCommandGiven = false;
         }
     }
 }

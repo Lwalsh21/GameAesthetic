@@ -60,6 +60,10 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\UnitSelectionBox.cs" />
     <Compile Include="Assets\Scripts\unit.cs" />
+    <Compile Include="Assets\Scripts\RTSCameraController.cs" />
+    <Compile Include="Assets\Scripts\UnitFollowState.cs" />
+    <Compile Include="Assets\Scripts\UnitIdleState.cs" />
+    <Compile Include="Assets\Scripts\AttackController.cs" />
     <Compile Include="Assets\Scripts\UnitMovement.cs" />
     <Compile Include="Assets\Scripts\UnitSelectionManager.cs" />
   </ItemGroup>
