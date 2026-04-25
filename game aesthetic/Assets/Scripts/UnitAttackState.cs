@@ -10,6 +10,8 @@ public class UnitAttackState : StateMachineBehaviour
     AttackController attackController;
 
     public float outOfRange = 1.2f;
+    public float attackRate = 1f;
+    private float attackTimer;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -25,11 +27,17 @@ public class UnitAttackState : StateMachineBehaviour
         {
             LookAtTarget();
 
-            agent.SetDestination(attackController.targetToAttack.position);
+            // agent.SetDestination(attackController.targetToAttack.position);
 
-            var damagetoInflict = attackController.unitdamage;
-
-            attackController.targetToAttack.GetComponent<Enemy>().ReceiveDamage(damagetoInflict);
+            if (attackTimer <= 0f)
+            {
+                Attack();
+                attackTimer = 1f / attackRate;
+            }
+            else
+            {
+                attackTimer -= Time.deltaTime;
+            }
 
             float distanceToTarget = Vector3.Distance(attackController.targetToAttack.position, animator.transform.position);
             if (distanceToTarget <= outOfRange || attackController.targetToAttack == null)
@@ -37,8 +45,21 @@ public class UnitAttackState : StateMachineBehaviour
                 
                 animator.SetBool("Attack", false);
             }
+            else
+            {
+                animator.SetBool("Attack", false);
+            }
         }
     }
+
+    private void Attack()
+    {
+        var damagetoInflict = attackController.unitdamage;
+
+        attackController.targetToAttack.GetComponent<Unit>().DealDamage(damagetoInflict);
+
+    }
+
 
     private void LookAtTarget()
     {
