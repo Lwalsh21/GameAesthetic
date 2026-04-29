@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.8f1 (b5eafc012955) revision 11922172'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 16314 MB
+OS: 'Windows 11  (10.0.26200) 64bit Core' Language: 'en' Physical Memory: 16055 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -15,7 +15,7 @@ C:/Users/liamw/OneDrive/Documents/GitHub/GameAesthetic/game aesthetic
 -logFile
 Logs/AssetImportWorker6.log
 -srvPort
-58875
+55109
 Successfully changed project path to: C:/Users/liamw/OneDrive/Documents/GitHub/GameAesthetic/game aesthetic
 C:/Users/liamw/OneDrive/Documents/GitHub/GameAesthetic/game aesthetic
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/liamw/OneDrive/Documents/GitHub/GameAesthetic/game aesthetic
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [9300] Host "[IP] 192.168.0.104 [Port] 0 [Flags] 2 [Guid] 2116190243 [EditorId] 2116190243 [Version] 1048832 [Id] WindowsEditor(7,GameCrafter-LW) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [46336] Host "[IP] 10.20.103.106 [Port] 0 [Flags] 2 [Guid] 1726418757 [EditorId] 1726418757 [Version] 1048832 [Id] WindowsEditor(7,GameDev-LW) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [9300] Host "[IP] 192.168.0.104 [Port] 0 [Flags] 2 [Guid] 2116190243 [EditorId] 2116190243 [Version] 1048832 [Id] WindowsEditor(7,GameCrafter-LW) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [46336] Host "[IP] 10.20.103.106 [Port] 0 [Flags] 2 [Guid] 1726418757 [EditorId] 1726418757 [Version] 1048832 [Id] WindowsEditor(7,GameDev-LW) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-[Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 13.14 ms, found 3 plugins.
+[Physics::Module] Initialized MultithreadedJobDispatcher with 19 workers.
+Refreshing native plugins compatible for Editor in 8.40 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.8f1 (b5eafc012955)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -62,52 +62,52 @@ Initialize engine version: 2022.3.8f1 (b5eafc012955)
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 SUPER (ID=0x1f06)
-    Vendor:   NVIDIA
-    VRAM:     8006 MB
-    Driver:   32.0.15.8115
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x46a6)
+    Vendor:   Intel
+    VRAM:     8027 MB
+    Driver:   32.0.101.7077
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56636
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56756
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.015572 seconds.
-- Loaded All Assemblies, in  0.442 seconds
+Registered in 0.007965 seconds.
+- Loaded All Assemblies, in  0.391 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.294 seconds
-Domain Reload Profiling: 733ms
-	BeginReloadAssembly (133ms)
+- Finished resetting the current domain, in  0.250 seconds
+Domain Reload Profiling: 640ms
+	BeginReloadAssembly (150ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (82ms)
-	LoadAllAssembliesAndSetupDomain (166ms)
-		LoadAssemblies (129ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (128ms)
+		LoadAssemblies (147ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (164ms)
-			TypeCache.Refresh (162ms)
-				TypeCache.ScanAssembly (148ms)
+		AnalyzeDomain (126ms)
+			TypeCache.Refresh (124ms)
+				TypeCache.ScanAssembly (112ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (295ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (250ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (227ms)
+		SetupLoadedEditorAssemblies (191ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
+			InitializePlatformSupportModulesInManaged (10ms)
 			SetLoadedEditorAssemblies (8ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (140ms)
-			ProcessInitializeOnLoadMethodAttributes (64ms)
+			ProcessInitializeOnLoadAttributes (123ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,55 +115,55 @@ Domain Reload Profiling: 733ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.771 seconds
-Refreshing native plugins compatible for Editor in 5.62 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.634 seconds
+Refreshing native plugins compatible for Editor in 4.09 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.928 seconds
-Domain Reload Profiling: 1694ms
-	BeginReloadAssembly (176ms)
+- Finished resetting the current domain, in  0.640 seconds
+Domain Reload Profiling: 1271ms
+	BeginReloadAssembly (144ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (23ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (54ms)
-	LoadAllAssembliesAndSetupDomain (483ms)
-		LoadAssemblies (380ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (403ms)
+		LoadAssemblies (310ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (209ms)
-			TypeCache.Refresh (183ms)
-				TypeCache.ScanAssembly (169ms)
-			ScanForSourceGeneratedMonoScriptInfo (19ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (929ms)
+		AnalyzeDomain (179ms)
+			TypeCache.Refresh (155ms)
+				TypeCache.ScanAssembly (143ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (640ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (757ms)
+		SetupLoadedEditorAssemblies (483ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
+			InitializePlatformSupportModulesInManaged (6ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (86ms)
-			ProcessInitializeOnLoadAttributes (620ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
-			AfterProcessingInitializeOnLoad (15ms)
+			BeforeProcessingInitializeOnLoad (68ms)
+			ProcessInitializeOnLoadAttributes (380ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
-Refreshing native plugins compatible for Editor in 5.14 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 3.32 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3790 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (57.8 KB). Loaded Objects now: 4281.
-Memory consumption went from 151.5 MB to 151.4 MB.
-Total: 4.669700 ms (FindLiveObjects: 0.376500 ms CreateObjectMapping: 0.096000 ms MarkObjects: 4.059200 ms  DeleteObjects: 0.136300 ms)
+Unloading 3791 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (57.7 KB). Loaded Objects now: 4282.
+Memory consumption went from 151.8 MB to 151.8 MB.
+Total: 3.937300 ms (FindLiveObjects: 0.231600 ms CreateObjectMapping: 0.111700 ms MarkObjects: 3.467700 ms  DeleteObjects: 0.124700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/button.cs: c000ade5b3c46d05cea7380b75b556f5 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
@@ -174,131 +174,1106 @@ AssetImportParameters requested are different than current active one (requested
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/BuySystem.cs: f72b59f179b11b3943d46e8bd1f64f72 -> f5af2869d293c8ae9fbbc6acb87c8105
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/ConstructionSlot.cs: f8b8ac37ca3e339f19c7d3f7df9e75c0 -> 48eeba72f7daccac8d70103b679d0378
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.443 seconds
+Refreshing native plugins compatible for Editor in 3.10 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.705 seconds
+Domain Reload Profiling: 2145ms
+	BeginReloadAssembly (144ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (232ms)
+		LoadAssemblies (295ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (1706ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (440ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (70ms)
+			ProcessInitializeOnLoadAttributes (335ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 4.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3768 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (31.1 KB). Loaded Objects now: 4286.
+Memory consumption went from 146.2 MB to 146.1 MB.
+Total: 3.884600 ms (FindLiveObjects: 0.290800 ms CreateObjectMapping: 0.133500 ms MarkObjects: 3.393500 ms  DeleteObjects: 0.064900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 190533.634763 seconds.
-  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House Prefabs/House 13.prefab
-  artifactKey: Guid(12a4d671dfbe87f41ba28d72a50e17ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House Prefabs/House 13.prefab using Guid(12a4d671dfbe87f41ba28d72a50e17ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded68f7695dcf5f29390b002d140c0be') in 0.222672 seconds
+  Time since last request: 992278.837316 seconds.
+  path: Assets/Misc/arrow.fbx
+  artifactKey: Guid(18c1cd55a50995a408433366c9942582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Misc/arrow.fbx using Guid(18c1cd55a50995a408433366c9942582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3596aa1168b2aa989a4ceb02dd522efb') in 0.169703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 1.207612 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Birches/BirchTreeAdultA.prefab
+  artifactKey: Guid(f7252417b500f824f9f83d2238151f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Birches/BirchTreeAdultA.prefab using Guid(f7252417b500f824f9f83d2238151f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74befab2db0441647d05a013371f1f1b') in 0.054496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.312249 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Birch/BirchTreeAdultA.fbx
+  artifactKey: Guid(642f000527b984744a729288940765a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Birch/BirchTreeAdultA.fbx using Guid(642f000527b984744a729288940765a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '273a63614b378e2487a96987414ae85d') in 0.039841 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000603 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Birches/BirchTreeYoungCSimple.prefab
+  artifactKey: Guid(f0318034295a69b4aa2e988683d0f7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Birches/BirchTreeYoungCSimple.prefab using Guid(f0318034295a69b4aa2e988683d0f7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b461c13b76f9d0e9f26558c5734e39f7') in 0.061125 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 4.387942 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Birch/BirchTreeYoungCSimple.fbx
+  artifactKey: Guid(99a50bed576fd5742af7873b3532335e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Birch/BirchTreeYoungCSimple.fbx using Guid(99a50bed576fd5742af7873b3532335e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2185620af65fe4e5b8b84649ba5ab822') in 0.040089 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.066861 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Bluebells/BluebellBLeaves.prefab
+  artifactKey: Guid(4fb7284194e5a384782c296802f9c7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Bluebells/BluebellBLeaves.prefab using Guid(4fb7284194e5a384782c296802f9c7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee8e6bb9ec9f18f02c39a5e72c55b348') in 0.052554 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.736010 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Bluebells/BluebellBLeaves.fbx
+  artifactKey: Guid(bc087fdd2488e0f459d2a0c9a0dd2820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Bluebells/BluebellBLeaves.fbx using Guid(bc087fdd2488e0f459d2a0c9a0dd2820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f37388f36fc8b5c1d1f3098529a4494d') in 0.048017 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.461425 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Bushes/Bush8.fbx
+  artifactKey: Guid(766e85f6b3c0aa94d828ad10c9bbdc12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Bushes/Bush8.fbx using Guid(766e85f6b3c0aa94d828ad10c9bbdc12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14ba3cca08b31bc546e04fa5cda6399a') in 0.032149 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.313898 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Bushes/Bush8.prefab
+  artifactKey: Guid(8ddb019856de10d4a8ecfea974badd52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Bushes/Bush8.prefab using Guid(8ddb019856de10d4a8ecfea974badd52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1845dbb4ad7296fa22300afa7c909e') in 0.044261 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.007849 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Bushes/BushA.prefab
+  artifactKey: Guid(5e3ef3d165fc94440b844484f7abd524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Bushes/BushA.prefab using Guid(5e3ef3d165fc94440b844484f7abd524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '828d0b5ecc86daef4891ab2173a94b3c') in 0.049284 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.767628 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Bushes/BushA.fbx
+  artifactKey: Guid(baf92015c3e863341b6e7d3969c1ad75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Bushes/BushA.fbx using Guid(baf92015c3e863341b6e7d3969c1ad75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffca3f8d1211eb9f850fd0ab20e4aaca') in 0.034695 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.040565 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Props/Campfires/CampfireASmall.prefab
+  artifactKey: Guid(6e85cb502a92e1e438c6cf9a6e55e161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Props/Campfires/CampfireASmall.prefab using Guid(6e85cb502a92e1e438c6cf9a6e55e161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a339d5722bc9163f0e903f8dc27ee99') in 0.109766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.612664 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Props/Campfire/CampfireASmall.fbx
+  artifactKey: Guid(f24a39631271ea348bb845b719217701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Props/Campfire/CampfireASmall.fbx using Guid(f24a39631271ea348bb845b719217701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0442a777496ebd8e97b7f487356e8d27') in 0.033813 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.516746 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Daisies/DaisyB.prefab
+  artifactKey: Guid(3a504b825a3083b47815316c8971dc19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Daisies/DaisyB.prefab using Guid(3a504b825a3083b47815316c8971dc19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76a06d44ff4025a90146e71356996ff4') in 0.060408 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 1.000231 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Daisies/DaisyB.fbx
+  artifactKey: Guid(0c0afd19a7ef905458e8b33482081ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Daisies/DaisyB.fbx using Guid(0c0afd19a7ef905458e8b33482081ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71555791a122a7aeb94a9c8490656e58') in 0.039914 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.055144 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Dandelions/DandelionBLeaves.prefab
+  artifactKey: Guid(5d2f32b241d3fb1438da7c9332e4b52f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Dandelions/DandelionBLeaves.prefab using Guid(5d2f32b241d3fb1438da7c9332e4b52f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2b90a593320cb42f96c0f9d8da16157') in 0.058244 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.376757 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Dandelions/DandelionBLeaves.fbx
+  artifactKey: Guid(48a27d581801efe49935a2dfdc2ffb5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Dandelions/DandelionBLeaves.fbx using Guid(48a27d581801efe49935a2dfdc2ffb5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07a9cc2161b97ca29c36fba8509700f7') in 0.042285 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.654165 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Dandelions/DandelionsClusterB.fbx
+  artifactKey: Guid(c567b56ad0e41fc45a1ffbb643eb7302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Dandelions/DandelionsClusterB.fbx using Guid(c567b56ad0e41fc45a1ffbb643eb7302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '874fa04c108da5d42267f597a7ab131c') in 0.035241 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.518645 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Dandelions/DandelionsClusterB.prefab
+  artifactKey: Guid(c86c053b5d264544dac7a9543d41c5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Dandelions/DandelionsClusterB.prefab using Guid(c86c053b5d264544dac7a9543d41c5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e65b339a737f74918ba5409493846c9') in 0.045481 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.551437 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Mushrooms/DeathCap/DeathCapBAdultVariantC.fbx
+  artifactKey: Guid(c4ab5595597d9484cb6aed01a5847656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Mushrooms/DeathCap/DeathCapBAdultVariantC.fbx using Guid(c4ab5595597d9484cb6aed01a5847656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e3a570d1831fb61033d1d0c50b518db') in 0.031985 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.039864 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Ground/Mounds/DirtMoundD.prefab
+  artifactKey: Guid(8f81b4bff5f30b743bd2a33928d3e6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Ground/Mounds/DirtMoundD.prefab using Guid(8f81b4bff5f30b743bd2a33928d3e6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61627c544fd30fdda3a63c77bb8133c6') in 0.041913 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.505991 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/Mounds/DirtMoundD.fbx
+  artifactKey: Guid(736ba50661485dd47acfe4202f4a43ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/Mounds/DirtMoundD.fbx using Guid(736ba50661485dd47acfe4202f4a43ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '344c63c9859f4b7288d092f773e8ff31') in 0.045612 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.735374 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/SmallPiles/DirtPileG.fbx
+  artifactKey: Guid(3018d289f19715d4b843ea78b5a3a9b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/SmallPiles/DirtPileG.fbx using Guid(3018d289f19715d4b843ea78b5a3a9b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa4413dd69c3d042c6507ff5ea92c6fa') in 0.036514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.006920 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Ground/SmallPiles/DirtPileG.prefab
+  artifactKey: Guid(34d18cf02c7c6de4b9a7b06092c308cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Ground/SmallPiles/DirtPileG.prefab using Guid(34d18cf02c7c6de4b9a7b06092c308cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53effd393b3cdbf25272a02684cb77b8') in 0.045053 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.548603 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Ferns/FernBClusterVariantA.prefab
+  artifactKey: Guid(405500ba6852da942957eec1e3d7c92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Ferns/FernBClusterVariantA.prefab using Guid(405500ba6852da942957eec1e3d7c92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab23e8e7a50e445b266a6238da7409ad') in 0.056230 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.577449 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Ferns/FernDClusterVariantB.fbx
+  artifactKey: Guid(f54993003649dbd4fb02645229bf8fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Ferns/FernDClusterVariantB.fbx using Guid(f54993003649dbd4fb02645229bf8fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ece568a1089144af92595309944b8ac7') in 0.033766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.040525 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Ferns/FernDClusterVariantB.prefab
+  artifactKey: Guid(2ec0958c9bde5684fab3b57ca19f5274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Ferns/FernDClusterVariantB.prefab using Guid(2ec0958c9bde5684fab3b57ca19f5274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3698d8898754eb938a80a7cba566caf8') in 0.052558 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.491456 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Props/Campfires/FirewoodPileA.prefab
+  artifactKey: Guid(b729b42aaef7c9e4bb1912f385e76fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Props/Campfires/FirewoodPileA.prefab using Guid(b729b42aaef7c9e4bb1912f385e76fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '771e5d32d70b6426982b6e2e39bc6c9d') in 0.056077 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.455509 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Props/Campfire/FirewoodPileA.fbx
+  artifactKey: Guid(b3dcf7ca05a49ac4da3648152b888178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Props/Campfire/FirewoodPileA.fbx using Guid(b3dcf7ca05a49ac4da3648152b888178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eba48b3d56968ce769aaa4bfd5267191') in 0.045376 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.001367 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/FloatingIslands/FloatingIslandA.fbx
+  artifactKey: Guid(e00f38d569c23a54dbbcfa4151a1dd2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/FloatingIslands/FloatingIslandA.fbx using Guid(e00f38d569c23a54dbbcfa4151a1dd2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc0d09ddafc221ad2ed5ad2c35e6ad0e') in 0.037520 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.440361 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Ground/FloatingIslands/FloatingIslandA.prefab
+  artifactKey: Guid(a28a98df90792dd43b4a809fac42d68e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Ground/FloatingIslands/FloatingIslandA.prefab using Guid(a28a98df90792dd43b4a809fac42d68e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42cdd60c72816d8730da7a85b2cc92b4') in 0.046110 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.090832 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/FlyAgaric/FlyAgaricBAdultVariantB.prefab
+  artifactKey: Guid(a31623d7d7288794a9f2757ce9aa2b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/FlyAgaric/FlyAgaricBAdultVariantB.prefab using Guid(a31623d7d7288794a9f2757ce9aa2b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb253d49e8134f0cedd1e169670c89d8') in 0.044658 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.500727 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Mushrooms/FlyAgaric/FlyAgaricBAdultVariantB.fbx
+  artifactKey: Guid(e4544f525334a3b418bb6533d326395b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Mushrooms/FlyAgaric/FlyAgaricBAdultVariantB.fbx using Guid(e4544f525334a3b418bb6533d326395b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c39aefced683c3c3641dd4b6dec3c3f6') in 0.040290 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.431744 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/FlyAgaric/FlyAgaricBYoungVariantB.prefab
+  artifactKey: Guid(cb7fc882bfa52bf4a827a7a519bb2eab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/FlyAgaric/FlyAgaricBYoungVariantB.prefab using Guid(cb7fc882bfa52bf4a827a7a519bb2eab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '609e24c3588bf3152e87521bf22f1574') in 0.070877 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.213165 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Foxgloves/FoxgloveBVariantB.prefab
+  artifactKey: Guid(e08f9a3fcce6f4345a69f4b0f96ead2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Foxgloves/FoxgloveBVariantB.prefab using Guid(e08f9a3fcce6f4345a69f4b0f96ead2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8def1f2202b8ac6cb1e99a1f6d8bc33d') in 0.053699 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.065450 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/GenericTrees/GenericTreeB.fbx
+  artifactKey: Guid(2e1029bb3519cd442ae3bc0e7a920a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/GenericTrees/GenericTreeB.fbx using Guid(2e1029bb3519cd442ae3bc0e7a920a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7371aea6af061cabf855801a7fe51952') in 0.030834 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.392575 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/GenericTrees/GenericTreeB.prefab
+  artifactKey: Guid(667b5a9e049a14242ab66dcd62d18342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/GenericTrees/GenericTreeB.prefab using Guid(667b5a9e049a14242ab66dcd62d18342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87de5787f8bb088704f52e65ddabfaeb') in 0.034559 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.038070 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/GenericTrees/GenericTreeD.prefab
+  artifactKey: Guid(a693a12506736c54dae9175f1c04ac3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/GenericTrees/GenericTreeD.prefab using Guid(a693a12506736c54dae9175f1c04ac3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d94d801b00a5008b41365770564ab64') in 0.048785 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.483241 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/GenericTrees/GenericTreeD.fbx
+  artifactKey: Guid(a11317a70eaf955438aee69576672efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/GenericTrees/GenericTreeD.fbx using Guid(a11317a70eaf955438aee69576672efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36fe607406108f54aa3f1517fe04bed2') in 0.038283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.039154 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Mushrooms/Girolle/GirolleAVariantA.fbx
+  artifactKey: Guid(42bc5f970a0316c4c94102c4f153df33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Mushrooms/Girolle/GirolleAVariantA.fbx using Guid(42bc5f970a0316c4c94102c4f153df33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be6182340304aba78755b420f1cab356') in 0.037286 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.978730 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/Girolle/GirolleAVariantA.prefab
+  artifactKey: Guid(6cb33f37d46f4474694f720120553d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/Girolle/GirolleAVariantA.prefab using Guid(6cb33f37d46f4474694f720120553d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a88e511aedbb6655df3832f6c427acc6') in 0.030449 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.744909 seconds.
+  path: Assets/Stuff/grass_pack_of_9_vars_lowpoly_game_ready/source/grass.fbx
+  artifactKey: Guid(9ce4d42480753774982daa2bb0aa4b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/grass_pack_of_9_vars_lowpoly_game_ready/source/grass.fbx using Guid(9ce4d42480753774982daa2bb0aa4b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '774e50af70f837fecda66745e6aaa76e') in 0.929332 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 51
+========================================================================
+Received Import Request.
+  Time since last request: 0.240841 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Grass/GrassLumps/GrassLumpLargeFTall.prefab
+  artifactKey: Guid(0c2387832aee4d14c9095f0f05aebe31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Grass/GrassLumps/GrassLumpLargeFTall.prefab using Guid(0c2387832aee4d14c9095f0f05aebe31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a6041b295eb44f2fd77e99593643e38') in 0.042513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.029578 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Grass/GrassLumps/GrassLumpLargeFTall 1.prefab
+  artifactKey: Guid(80e69bc43086f8b4da7412f7549809b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Grass/GrassLumps/GrassLumpLargeFTall 1.prefab using Guid(80e69bc43086f8b4da7412f7549809b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e5ffae7e00b4d69264bae96dc5b0f9') in 0.028576 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 16
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House Prefabs/House 8.prefab
-  artifactKey: Guid(14eaa2a678a23b14884562d67a5484c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House Prefabs/House 8.prefab using Guid(14eaa2a678a23b14884562d67a5484c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2461edf7f429e310af8c81ee498ab90') in 0.027661 seconds
+  Time since last request: 1.537962 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/Mounds/GrassMoundA.fbx
+  artifactKey: Guid(dd24c001a1cb727469da37390f41b68b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/Mounds/GrassMoundA.fbx using Guid(dd24c001a1cb727469da37390f41b68b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d4006f22758adaf9f9ea78f5962738') in 0.040638 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.404560 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/Mounds/GrassMoundD.fbx
+  artifactKey: Guid(9b2b2270bfe9c724f991d232b2239d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/Mounds/GrassMoundD.fbx using Guid(9b2b2270bfe9c724f991d232b2239d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42305b851497321ae72dc311b8cd2e0e') in 0.033443 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.082445 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/SmallPiles/GrassPileG.fbx
+  artifactKey: Guid(15d219c8063a9a14d84d5c368a9a45b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Ground/SmallPiles/GrassPileG.fbx using Guid(15d219c8063a9a14d84d5c368a9a45b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '126f6af69c5df3529205388cda29070c') in 0.034053 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 4.227397 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Ground/SmallPiles/GrassPileG.prefab
+  artifactKey: Guid(92b2a66a4515f6a46a71dd945e86d969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Ground/SmallPiles/GrassPileG.prefab using Guid(92b2a66a4515f6a46a71dd945e86d969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04855434f794eabf03dca72f606f5bf2') in 0.039070 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.756237 seconds.
+  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House 1.fbx
+  artifactKey: Guid(4a0a66f657d9c47498783f6852255ef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House 1.fbx using Guid(4a0a66f657d9c47498783f6852255ef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0efbd03a3ae7005329b84a6c26395281') in 0.098898 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.329592 seconds.
+  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House 2.fbx
+  artifactKey: Guid(bae31145fee986d459a123a118ad7fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House 2.fbx using Guid(bae31145fee986d459a123a118ad7fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7247be2040f724ab6e15b351918bba9c') in 0.061554 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.836524 seconds.
+  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House 3.fbx
+  artifactKey: Guid(9ca1ad804f31ec940bde941d249a9cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House 3.fbx using Guid(9ca1ad804f31ec940bde941d249a9cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac23ec2a8b037487dca55eb86bc7346e') in 0.073660 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.034202 seconds.
+  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House 4.fbx
+  artifactKey: Guid(6c4cb51d42037234babfb70909236c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House 4.fbx using Guid(6c4cb51d42037234babfb70909236c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b8d7ea6f96da35aa71ef5d37be5b2b3') in 0.058537 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.243237 seconds.
+  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House 5.fbx
+  artifactKey: Guid(73d3a7f0ebb281b4db338a3c33f9d0d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House 5.fbx using Guid(73d3a7f0ebb281b4db338a3c33f9d0d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28edbfc960432b779b29ccbaca24a8f7') in 0.079325 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.286116 seconds.
+  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House 6.fbx
+  artifactKey: Guid(21cedd55a26f6db4cac11a161bc69380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House 6.fbx using Guid(21cedd55a26f6db4cac11a161bc69380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56f1a0b25b822ba172cb216acee9db68') in 0.069976 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.280916 seconds.
+  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House 7.fbx
+  artifactKey: Guid(d16a542520b9b5d4faee570f07e7db4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House 7.fbx using Guid(d16a542520b9b5d4faee570f07e7db4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f425d00fec25dadd57105ad109a3452d') in 0.073327 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.291781 seconds.
+  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House 8.fbx
+  artifactKey: Guid(fc6ff665fee23d94d9086981ed570a3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House 8.fbx using Guid(fc6ff665fee23d94d9086981ed570a3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c2717cfbb8a2d156727f0f6b22d6c09') in 0.085781 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.270221 seconds.
+  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House 9.fbx
+  artifactKey: Guid(aa3d131fcc9559d4496d3152d5ef6410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House 9.fbx using Guid(aa3d131fcc9559d4496d3152d5ef6410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '457212deec6c7aa5ddd7dd2876375c98') in 0.077112 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.284374 seconds.
+  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House 10.fbx
+  artifactKey: Guid(650481fb50e0c5e4987d83aa240f5fe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House 10.fbx using Guid(650481fb50e0c5e4987d83aa240f5fe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64463adf64d49c79eb714213e6de1155') in 0.075362 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.061791 seconds.
+  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House 11.fbx
+  artifactKey: Guid(96ece93aae76ba54f818b02f7b3e03e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House 11.fbx using Guid(96ece93aae76ba54f818b02f7b3e03e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '570da8ffc26e76af28e12012d305ba42') in 0.081170 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.218348 seconds.
+  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House 12.fbx
+  artifactKey: Guid(09f0655e2d68ea940b923b4317c8c3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House 12.fbx using Guid(09f0655e2d68ea940b923b4317c8c3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '016b11e3f174070c44d548cf2defc985') in 0.060318 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.280748 seconds.
+  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House 13.fbx
+  artifactKey: Guid(18b0267160e210b47acbbfb1129b8bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House 13.fbx using Guid(18b0267160e210b47acbbfb1129b8bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2906d7e2df85b4da42820fceba07331') in 0.059930 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.339188 seconds.
+  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House 14.fbx
+  artifactKey: Guid(1d5265aca4e12e14187852df8037089b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House 14.fbx using Guid(1d5265aca4e12e14187852df8037089b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec2233b64e2258a5b3ea25392d7ab92f') in 0.065493 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.301536 seconds.
+  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House 15.fbx
+  artifactKey: Guid(83e39da13214ddf40a93d2ba02b9ab7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House 15.fbx using Guid(83e39da13214ddf40a93d2ba02b9ab7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05641d2feb4bf8f83a5bad8f7b31ad3d') in 0.064202 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.273823 seconds.
+  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House 16.fbx
+  artifactKey: Guid(0e15fc7b6f4e2d447a1e6a28fd1014f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House 16.fbx using Guid(0e15fc7b6f4e2d447a1e6a28fd1014f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8ca0331da191ab3487d0fde0022ac60') in 0.070745 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.041051 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Ivy/IvySimple/IvybranchCDense.prefab
+  artifactKey: Guid(7edbaad9155dda841bb997ba4c826ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Ivy/IvySimple/IvybranchCDense.prefab using Guid(7edbaad9155dda841bb997ba4c826ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '380bb1a76ac9274517ae9fd55a655509') in 0.049626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.199388 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Ivy/IvySimple/IvybranchCDense.fbx
+  artifactKey: Guid(734f82496c6252d4cb348f9589c47a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Ivy/IvySimple/IvybranchCDense.fbx using Guid(734f82496c6252d4cb348f9589c47a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ebb1beedf7e4824da620d5557f357bd') in 0.054119 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.007399 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Ivy/IvySimple/IvybranchCSparse.prefab
+  artifactKey: Guid(488cdfd0514e4d341a7e4da277246507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Ivy/IvySimple/IvybranchCSparse.prefab using Guid(488cdfd0514e4d341a7e4da277246507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c4b119b19bea12ec4c0a948b33c9a7b') in 0.058128 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.225362 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Ivy/IvySimple/IvybranchCSparse.fbx
+  artifactKey: Guid(87463570426b0af498dc14e9be1061c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/Ivy/IvySimple/IvybranchCSparse.fbx using Guid(87463570426b0af498dc14e9be1061c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40eaf01d17fa143e7e75226558d18fd4') in 0.050765 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.342609 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Grass/GrassLumps/MixedGrassLumpLargeB.prefab
+  artifactKey: Guid(2f88dba5f4b2e15449fc2288dd773e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Grass/GrassLumps/MixedGrassLumpLargeB.prefab using Guid(2f88dba5f4b2e15449fc2288dd773e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f443fb7b7c77a260ac8d42cc4f01e650') in 0.038885 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.300813 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Nettles/NettleDMixedVariantB.prefab
+  artifactKey: Guid(bd6b1984f6ab9da49b13605d2decef3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/Nettles/NettleDMixedVariantB.prefab using Guid(bd6b1984f6ab9da49b13605d2decef3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36eb025a6d0cdbe86a980bb6130167c7') in 0.058799 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.098567 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Oak/OakAdultD.fbx
+  artifactKey: Guid(b25c398ecea405840943df42dba6dd0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Oak/OakAdultD.fbx using Guid(b25c398ecea405840943df42dba6dd0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3067e83ee5b90b9c23a4718a43477666') in 0.050611 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.347158 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Oak/OakAdultD.prefab
+  artifactKey: Guid(f092fcd3cb640fd4885a0887618a20d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Oak/OakAdultD.prefab using Guid(f092fcd3cb640fd4885a0887618a20d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f062ccc9c653236cc640ed64c3bc6fd9') in 0.035472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.442474 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/ParasolMushroom/ParasolMushroomMatureVariantB.prefab
+  artifactKey: Guid(92f4d15d1b5c6e14bb036955824e7279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/ParasolMushroom/ParasolMushroomMatureVariantB.prefab using Guid(92f4d15d1b5c6e14bb036955824e7279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b7abf95dad1ec32f0f6c21d4947d1af') in 0.033286 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.995759 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Pines/PinesVariantA/PineVariantAGrowingB.prefab
+  artifactKey: Guid(9e233e4f89ad60b448af75ab01971d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Pines/PinesVariantA/PineVariantAGrowingB.prefab using Guid(9e233e4f89ad60b448af75ab01971d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed5057adec489f01c1939b78f9051a6e') in 0.051655 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.304792 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Pines/PineVariantA/PineVariantAGrowingB.fbx
+  artifactKey: Guid(722d070a5aa84eb4a854f796b0589e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Pines/PineVariantA/PineVariantAGrowingB.fbx using Guid(722d070a5aa84eb4a854f796b0589e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd27b361c12b0f4be30626b3fd56ab7ac') in 0.037253 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.037705 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Pines/PinesVariantA/PineVariantAMatureB.prefab
+  artifactKey: Guid(8ddde62f0160a6f4a95d49bb77217e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Pines/PinesVariantA/PineVariantAMatureB.prefab using Guid(8ddde62f0160a6f4a95d49bb77217e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f8d3acdf6e07bdcbe2dbadf862aac23') in 0.047340 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.451274 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Pines/PineVariantA/PineVariantAMatureB.fbx
+  artifactKey: Guid(16caafe12082485418ce7d365b89e6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Pines/PineVariantA/PineVariantAMatureB.fbx using Guid(16caafe12082485418ce7d365b89e6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6c5090ced8e6672912a797030e82d70') in 0.040025 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.041077 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Pines/PineVariantA/PineVariantAYoungC.fbx
+  artifactKey: Guid(3d218ce37b699454a8925a412a62ed27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/Pines/PineVariantA/PineVariantAYoungC.fbx using Guid(3d218ce37b699454a8925a412a62ed27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f79e15aa6512175f0623fd55a516746b') in 0.035145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.034283 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Pines/PinesVariantA/PineVariantAYoungC.prefab
+  artifactKey: Guid(ba47b59ee0e3c01418b233bfc11c96a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Pines/PinesVariantA/PineVariantAYoungC.prefab using Guid(ba47b59ee0e3c01418b233bfc11c96a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '678410185f352cafbe0ea7dce8f35475') in 0.027460 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.385862 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Props/Planks/PlankMed.fbx
+  artifactKey: Guid(bf720d7e2002a794ab5b4467bf243988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Props/Planks/PlankMed.fbx using Guid(bf720d7e2002a794ab5b4467bf243988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdbc7ca31ee2035c2a0bc72771f24a40') in 0.042252 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.400533 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Props/Planks/PlankStackB.prefab
+  artifactKey: Guid(0a722d7708ab5db4a9028b830d411139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Props/Planks/PlankStackB.prefab using Guid(0a722d7708ab5db4a9028b830d411139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '163cc959fba5c9c0981a7b2bf86064cc') in 0.052052 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.068289 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/PlantSaplingG.prefab
+  artifactKey: Guid(27c9d9ad6c2fa2e45bdd6520dd9fdfb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/PlantSaplingG.prefab using Guid(27c9d9ad6c2fa2e45bdd6520dd9fdfb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '748c396154c141273b6f83ba247501a0') in 0.048627 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.337535 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/PlantSaplingG.fbx
+  artifactKey: Guid(9a7e7ab6928a0444783532b7ae179a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/PlantSaplingG.fbx using Guid(9a7e7ab6928a0444783532b7ae179a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e374f45cdeab7b98eeb714374040ed') in 0.044642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.036744 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/Porcini/PorcinigBAdultVariantD.prefab
+  artifactKey: Guid(7a16d0dff2341a04499856cf0518c4a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/Porcini/PorcinigBAdultVariantD.prefab using Guid(7a16d0dff2341a04499856cf0518c4a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f02c59ceb90e218065a5686267b59fee') in 0.050158 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.033210 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Mushrooms/Porcini/PorcinigBAdultVariantD.fbx
+  artifactKey: Guid(8b9d8e31a0d734e468385073d5d78601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Mushrooms/Porcini/PorcinigBAdultVariantD.fbx using Guid(8b9d8e31a0d734e468385073d5d78601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e624dd673887c7cac79fffa4bc4b53c2') in 0.030294 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.363361 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockBigC.fbx
+  artifactKey: Guid(b8c659933fafc384fbf4c56e9e396cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockBigC.fbx using Guid(b8c659933fafc384fbf4c56e9e396cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '557c2fe140a006d523ab214f2213a1f0') in 0.038465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.034254 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Rocks/RockBigC.prefab
+  artifactKey: Guid(ecf01da8a44b59e478c93d1fb5543eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Rocks/RockBigC.prefab using Guid(ecf01da8a44b59e478c93d1fb5543eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3218f483c548b107b8a552426fb9e212') in 0.043811 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 1.464833 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockBlueD.fbx
+  artifactKey: Guid(cd5f7376db7add847ada07b4f6c88070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockBlueD.fbx using Guid(cd5f7376db7add847ada07b4f6c88070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f74308318de097a0b218491767f8ed6') in 0.033069 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.385044 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Rocks/RockBlueD.prefab
+  artifactKey: Guid(ca15446960084ff44bc766326803dc6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Rocks/RockBlueD.prefab using Guid(ca15446960084ff44bc766326803dc6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c887ee4fea4c2d0bc78a490e4a212e7b') in 0.039257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.041778 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockNormD.fbx
+  artifactKey: Guid(2689ea4dcfeb8da439bad16666daa3ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockNormD.fbx using Guid(2689ea4dcfeb8da439bad16666daa3ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe0776adcb864197b75ff91f2cfc8218') in 0.032461 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.041265 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Rocks/RockNormD.prefab
+  artifactKey: Guid(db1a1ba10891cdc4cac435945dcc40b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Rocks/RockNormD.prefab using Guid(db1a1ba10891cdc4cac435945dcc40b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a62f18414917af953585644e105117c3') in 0.038427 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.323223 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockSmallA.fbx
+  artifactKey: Guid(074938465f1a8964c8618ddbe32d2b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockSmallA.fbx using Guid(074938465f1a8964c8618ddbe32d2b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ed779f8851f1ff66b6c440874bd51bb') in 0.039783 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.923476 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Rocks/RockSmallA.prefab
+  artifactKey: Guid(092a4707f8b589a439a015aeb164de54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Rocks/RockSmallA.prefab using Guid(092a4707f8b589a439a015aeb164de54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fa8f476a0be65b000d48228dba96239') in 0.027843 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.507874 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Rocks/RockSmallE.prefab
+  artifactKey: Guid(01d8d9ed0eec2844c8f07d40d51db58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Rocks/RockSmallE.prefab using Guid(01d8d9ed0eec2844c8f07d40d51db58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '064bff3b68f99bf748d226572ef17526') in 0.050416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.492190 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockSmallE.fbx
+  artifactKey: Guid(14722e6a1384b624b813e9e987a85a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Rocks/RockSmallE.fbx using Guid(14722e6a1384b624b813e9e987a85a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aa26b694b3f5558f6262201a21a46d0') in 0.051883 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.038734 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Ruins/RuinedWalls/RuinedWallA.fbx
+  artifactKey: Guid(b455936d14ab647478c64619cf509e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Ruins/RuinedWalls/RuinedWallA.fbx using Guid(b455936d14ab647478c64619cf509e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dc7d23684cd594f000cc2c498df97ed') in 0.035210 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.368774 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Arch/Ruins/RuinedWalls/RuinedWallA.prefab
+  artifactKey: Guid(b7e72b2b99e757143846e12dc66116f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Arch/Ruins/RuinedWalls/RuinedWallA.prefab using Guid(b7e72b2b99e757143846e12dc66116f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f7484923d4d7301b09ec60f2e2e3f91') in 0.067966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 0.003631 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Ruins/RuinedWalls/RuinedWallRubbleA.fbx
+  artifactKey: Guid(34674780c2f35b945861ae483fea3346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Ruins/RuinedWalls/RuinedWallRubbleA.fbx using Guid(34674780c2f35b945861ae483fea3346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1df40b49002ba0d132216e512094f20') in 0.060536 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.367549 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Arch/Ruins/RuinedWalls/RuinedWallRubbleA.prefab
+  artifactKey: Guid(59a3797f3b7e673419747b64d590ee73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Arch/Ruins/RuinedWalls/RuinedWallRubbleA.prefab using Guid(59a3797f3b7e673419747b64d590ee73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a7e3be61a4c5de260e38967a7e5cc7d') in 0.097416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 0.816841 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/ShaggyInkCap/ShaggyInkCapCMatureVariantB.prefab
+  artifactKey: Guid(b79e184080e56fb45b6044d75056fa7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/ShaggyInkCap/ShaggyInkCapCMatureVariantB.prefab using Guid(b79e184080e56fb45b6044d75056fa7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29bdb739d85d66c6d182e52b0301c3bc') in 0.052603 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.426179 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/ShaggyInkCap/ShaggyInkCapDMeltingVariantB.prefab
+  artifactKey: Guid(1d4c29c238fa0a046812bf5273cb1c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Mushrooms/ShaggyInkCap/ShaggyInkCapDMeltingVariantB.prefab using Guid(1d4c29c238fa0a046812bf5273cb1c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42718d0de0350d3bebfcd35ef16d7bb6') in 0.072533 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.496585 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/WitheredTrees/SmallWitheredTreeB.fbx
+  artifactKey: Guid(e1550b11516a85f48bb62e7efaa4037e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/WitheredTrees/SmallWitheredTreeB.fbx using Guid(e1550b11516a85f48bb62e7efaa4037e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7048fffd3fcb4fb98e12239563b918f') in 0.038038 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.441276 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/WitheredTrees/SmallWitheredTreeB.prefab
+  artifactKey: Guid(618c6ae813a585c49a19c60996652fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/WitheredTrees/SmallWitheredTreeB.prefab using Guid(618c6ae813a585c49a19c60996652fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '971fcfb862ba808e4f294d33cd61ffc5') in 0.032519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.089238 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Fence/SimWoodFnc/SWFModules/SWFModA.fbx
+  artifactKey: Guid(fe47cdb1cf11424468edf69fc159a74d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Arch/Fence/SimWoodFnc/SWFModules/SWFModA.fbx using Guid(fe47cdb1cf11424468edf69fc159a74d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b36d719eb193859b9648321d88bdc5a0') in 0.038069 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.282415 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Arch/Fence/SimWoodFnc/SWFModules/SWFModShortA.prefab
+  artifactKey: Guid(32507ea3602f7e1479230d5711100c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Arch/Fence/SimWoodFnc/SWFModules/SWFModShortA.prefab using Guid(32507ea3602f7e1479230d5711100c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '746c1917dd8f85495fd50367c38c4061') in 0.058207 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.327931 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Prefabs/Text Popup.prefab
+  artifactKey: Guid(b06f0e6c1dfa4356ac918da1bb32c603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Prefabs/Text Popup.prefab using Guid(b06f0e6c1dfa4356ac918da1bb32c603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dfd649e94d0b74201469f8750b608c6') in 0.115669 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.294901 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 2.prefab
+  artifactKey: Guid(fdad9d952ae84cafb74c63f2e694d042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 2.prefab using Guid(fdad9d952ae84cafb74c63f2e694d042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1c0a25ebdc07b8e9cdefa63198ba95f') in 0.024535 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 16
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House Prefabs/House 15.prefab
-  artifactKey: Guid(340f4da2520a452448711055661f9480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House Prefabs/House 15.prefab using Guid(340f4da2520a452448711055661f9480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ffde3976c9fdb246256d3c5073e6cfe') in 0.034683 seconds
+  Time since last request: 10.655674 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/TreeBranches/TreeBranchBLeafless.prefab
+  artifactKey: Guid(6603fde25cc8ddd4c9a4a5da2e495a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/TreeBranches/TreeBranchBLeafless.prefab using Guid(6603fde25cc8ddd4c9a4a5da2e495a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c14993906bf81da43ff0cfe1c342ff5') in 0.102503 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 26
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House Prefabs/House 10.prefab
-  artifactKey: Guid(96f71ece5f2fd5b4ea2feab800341f24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House Prefabs/House 10.prefab using Guid(96f71ece5f2fd5b4ea2feab800341f24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c744a4c55b5fa3ab8ea194ba7880705') in 0.031240 seconds
+  Time since last request: 0.315802 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeLogs/TreeLogOakB.fbx
+  artifactKey: Guid(d035b4713ea22e947880b592698aaa2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeLogs/TreeLogOakB.fbx using Guid(d035b4713ea22e947880b592698aaa2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b6ec74397e3b44319dd8c035055b5a3') in 0.040042 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 9
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House Prefabs/House 4.prefab
-  artifactKey: Guid(5c19ee5a6b7d76b42a2d3a14524087a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House Prefabs/House 4.prefab using Guid(5c19ee5a6b7d76b42a2d3a14524087a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a91e96dfb90ce5c21d34592e21599846') in 0.024977 seconds
+  Time since last request: 0.047789 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/TreeLogs/TreeLogsPiles/TreeLogPileNormalB.prefab
+  artifactKey: Guid(c8c7207c79784fc4c84596076e92fa7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/TreeLogs/TreeLogsPiles/TreeLogPileNormalB.prefab using Guid(c8c7207c79784fc4c84596076e92fa7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dd155e58ea3c03bbd85a5562d3fd7e5') in 0.073943 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 24
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House Prefabs/House 2.prefab
-  artifactKey: Guid(cb64446d379b3f140a7dde663fe3a215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House Prefabs/House 2.prefab using Guid(cb64446d379b3f140a7dde663fe3a215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f23ead3c2aa647261899c094cafc70c') in 0.031488 seconds
+  Time since last request: 0.000093 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeRoots/TreeRootB.fbx
+  artifactKey: Guid(2f325e9ed3e9493459e868b730887ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeRoots/TreeRootB.fbx using Guid(2f325e9ed3e9493459e868b730887ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fb42cabae28d7b23a82f219b8855275') in 0.061114 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 9
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House Prefabs/House 14.prefab
-  artifactKey: Guid(efdf74bd0b3d9084bbee00c440973ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House Prefabs/House 14.prefab using Guid(efdf74bd0b3d9084bbee00c440973ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b90d2f76a4b830fbff654f04fb2372a') in 0.028161 seconds
+  Time since last request: 0.259774 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/TreeRoots/TreeRootB.prefab
+  artifactKey: Guid(d3ae211f257204848b1f47d85bd3c5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/TreeRoots/TreeRootB.prefab using Guid(d3ae211f257204848b1f47d85bd3c5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a977a16aa9ed06d0596fa6477231e18') in 0.041878 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 22
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House Prefabs/House 11.prefab
-  artifactKey: Guid(926accc7e70bd624cbbbaec8f893dd87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House Prefabs/House 11.prefab using Guid(926accc7e70bd624cbbbaec8f893dd87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8c7d8df44e3790f634c13d447bab46b') in 0.030208 seconds
+  Time since last request: 0.145565 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/TreeStump/TreeStumpNormalC.prefab
+  artifactKey: Guid(082c47dd90e88a847883e2229ad9eebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/TreeStump/TreeStumpNormalC.prefab using Guid(082c47dd90e88a847883e2229ad9eebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42f9b0008a809623026060ab01282611') in 0.044630 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 22
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Stuff/Houses/GameAestheticVillageHouses/House Prefabs/House 9.prefab
-  artifactKey: Guid(29f8348d910dd7e43b4b24f49b15f9d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stuff/Houses/GameAestheticVillageHouses/House Prefabs/House 9.prefab using Guid(29f8348d910dd7e43b4b24f49b15f9d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0226fc9fbaae29825c07add34dd1b13b') in 0.027236 seconds
+  Time since last request: 0.314915 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeStumps/TreeStumpShortD.fbx
+  artifactKey: Guid(fdb6ea9b3e1c86240b089e474c95f799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/TreeStumps/TreeStumpShortD.fbx using Guid(fdb6ea9b3e1c86240b089e474c95f799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3432c3304b2cf0aaf3dc7c465d90f042') in 0.053969 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 9
 ========================================================================
 Received Import Request.
-  Time since last request: 30.880496 seconds.
-  path: Assets/Stuff/Houses/House 1.prefab
-  artifactKey: Guid(312ffeabe2321e5469049322e9e251da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stuff/Houses/House 1.prefab using Guid(312ffeabe2321e5469049322e9e251da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd58135e1cc4637e1ed8b0c09e47c8202') in 0.015249 seconds
+  Time since last request: 0.008211 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/TreeStump/TreeStumpShortD.prefab
+  artifactKey: Guid(8de34f9345384ef49934193c9fe665ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/TreeStump/TreeStumpShortD.prefab using Guid(8de34f9345384ef49934193c9fe665ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fd8a2284417d60c9d960864bce0d0c2') in 0.120907 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
+Number of asset objects unloaded after import = 28
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Stuff/Houses/House 16.prefab
-  artifactKey: Guid(bd00b5344f6ab4640a97542a4060f05b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stuff/Houses/House 16.prefab using Guid(bd00b5344f6ab4640a97542a4060f05b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be4751d250011289b34703ab8fac7150') in 0.013012 seconds
+  Time since last request: 0.257045 seconds.
+  path: Assets/Resources/UnitUI.prefab
+  artifactKey: Guid(c0fb8fcb57b244e4eb6dbc7b287d77cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/UnitUI.prefab using Guid(c0fb8fcb57b244e4eb6dbc7b287d77cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '239468dd5b5699e50b845ad6462b8ec1') in 0.021791 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
+Number of asset objects unloaded after import = 48
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Stuff/Houses/House 7.prefab
-  artifactKey: Guid(2a0ece68255eb5049a7e9208b40fda11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stuff/Houses/House 7.prefab using Guid(2a0ece68255eb5049a7e9208b40fda11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fad059bfd0ae70f0aeaed6cb56b5947') in 0.015587 seconds
+  Time since last request: 0.459813 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/WildGarlic/WildGarlicBLeaves.prefab
+  artifactKey: Guid(36c1a8d39f98c6c448e00c6f51c2b625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Plants/WildGarlic/WildGarlicBLeaves.prefab using Guid(36c1a8d39f98c6c448e00c6f51c2b625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5c463a6c58bcd4aef5e4f490f7689f7') in 0.045830 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
+Number of asset objects unloaded after import = 20
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Stuff/Houses/House 5.prefab
-  artifactKey: Guid(a883aae1b1d862745a6339681abb5043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stuff/Houses/House 5.prefab using Guid(a883aae1b1d862745a6339681abb5043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a63e52e85d60ed27d0d6080f36f3177e') in 0.028007 seconds
+  Time since last request: 0.299997 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/WildGarlic/WildGarlicBLeaves.fbx
+  artifactKey: Guid(3a620d9a6e2e0a045a3bb0f5bf5e086b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Plants/WildGarlic/WildGarlicBLeaves.fbx using Guid(3a620d9a6e2e0a045a3bb0f5bf5e086b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82d33d4d57967bac6230d08fa64dd382') in 0.045139 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
+Number of asset objects unloaded after import = 9
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Stuff/Houses/House 8.prefab
-  artifactKey: Guid(5a3c3f5a037e45546afc0e888f70ddaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stuff/Houses/House 8.prefab using Guid(5a3c3f5a037e45546afc0e888f70ddaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d649fec0e0efcf5f0148dccf239e695') in 0.022971 seconds
+  Time since last request: 0.008968 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/WeepingWillow/WillowTreeAdultA.fbx
+  artifactKey: Guid(6e70fe604311d5a419c604195008615d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/WeepingWillow/WillowTreeAdultA.fbx using Guid(6e70fe604311d5a419c604195008615d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abfed146b3b8b302529ae6ee65ce252c') in 0.042140 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
+Number of asset objects unloaded after import = 9
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Stuff/Houses/House 11.prefab
-  artifactKey: Guid(e05edc281753d3d4d9e62d2be2ef4f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stuff/Houses/House 11.prefab using Guid(e05edc281753d3d4d9e62d2be2ef4f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bee00b317b887e67b5277d662e88f66d') in 0.012856 seconds
+  Time since last request: 0.737971 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Willows/WillowTreeAdultA.prefab
+  artifactKey: Guid(43ee72857f3b6a84c97140ff3c4d22c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/Willows/WillowTreeAdultA.prefab using Guid(43ee72857f3b6a84c97140ff3c4d22c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e213e7e4b5fba1ae1a001ab94e988e71') in 0.029916 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.302642 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/WitheredTrees/WitheredTreeB.fbx
+  artifactKey: Guid(a7266c6e788d5e546b608993cdaa6203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Models/Env/Trees/WitheredTrees/WitheredTreeB.fbx using Guid(a7266c6e788d5e546b608993cdaa6203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc66e2742d7da44ddce1fc6d9395ca98') in 0.030716 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.038737 seconds.
+  path: Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/WitheredTrees/WitheredTreeB.prefab
+  artifactKey: Guid(7f5c42d9053047a4798da8780cb01670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stuff/VertexRageStudio/LowPolyNatureEssentials/Prefabs/Env/Trees/WitheredTrees/WitheredTreeB.prefab using Guid(7f5c42d9053047a4798da8780cb01670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c63abe77419d983fcb3b8d04658df23') in 0.027449 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  6.185 seconds
+Refreshing native plugins compatible for Editor in 5.35 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 25.401 seconds
+Domain Reload Profiling: 31583ms
+	BeginReloadAssembly (161ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (5953ms)
+		LoadAssemblies (6024ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (25401ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (423ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (69ms)
+			ProcessInitializeOnLoadAttributes (319ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 4.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3767 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (32.5 KB). Loaded Objects now: 4335.
+Memory consumption went from 151.7 MB to 151.7 MB.
+Total: 5.519300 ms (FindLiveObjects: 0.264900 ms CreateObjectMapping: 0.165000 ms MarkObjects: 4.985000 ms  DeleteObjects: 0.102400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

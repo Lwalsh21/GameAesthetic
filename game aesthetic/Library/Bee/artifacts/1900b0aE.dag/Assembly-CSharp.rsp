@@ -383,7 +383,7 @@
 "Assets/Scripts/House Scripts/UIManager.cs"
 "Assets/Scripts/RTSCameraController.cs"
 "Assets/Scripts/SoundManager.cs"
-"Assets/Scripts/Unit.cs"
+"Assets/Scripts/unit.cs"
 "Assets/Scripts/UnitAttackState.cs"
 "Assets/Scripts/UnitFollowState.cs"
 "Assets/Scripts/UnitIdleState.cs"
