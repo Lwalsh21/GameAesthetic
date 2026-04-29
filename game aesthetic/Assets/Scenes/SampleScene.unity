@@ -301,8 +301,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d113d9f902b5dd498352c73aecf793b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  availableSprite: {fileID: 0}
-  unAvailableSprite: {fileID: 0}
+  availableSprite: {fileID: 21300000, guid: 3eaaad0799978844fbcf0bfa499c68f1, type: 3}
+  unAvailableSprite: {fileID: 21300000, guid: 4c7393dd09fa2e046b96a4a5d41f25ca, type: 3}
   IsAvailable: 0
   buySystem: {fileID: 1952663314}
   databaseItemID: 4
@@ -1083,8 +1083,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d113d9f902b5dd498352c73aecf793b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  availableSprite: {fileID: 0}
-  unAvailableSprite: {fileID: 0}
+  availableSprite: {fileID: 21300000, guid: 425cd3639e8c90a408b4e0879ded7d90, type: 3}
+  unAvailableSprite: {fileID: 21300000, guid: 2e70fd24789d6bd4aa331d7be956333b, type: 3}
   IsAvailable: 0
   buySystem: {fileID: 1952663314}
   databaseItemID: 5
@@ -1430,8 +1430,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d113d9f902b5dd498352c73aecf793b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  availableSprite: {fileID: 0}
-  unAvailableSprite: {fileID: 0}
+  availableSprite: {fileID: 21300000, guid: 1bdee6392eba6e148a5f06b92c883dbc, type: 3}
+  unAvailableSprite: {fileID: 21300000, guid: 4c7393dd09fa2e046b96a4a5d41f25ca, type: 3}
   IsAvailable: 1
   buySystem: {fileID: 1952663314}
   databaseItemID: 1
@@ -2038,7 +2038,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.89733326, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.7999878, y: 0}
+  m_AnchoredPosition: {x: 0.8000488, y: 0}
   m_SizeDelta: {x: 0.6245117, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &471779277
@@ -2988,8 +2988,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d113d9f902b5dd498352c73aecf793b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  availableSprite: {fileID: 0}
-  unAvailableSprite: {fileID: 0}
+  availableSprite: {fileID: 21300000, guid: a387fccef32cbf444865114f0525f478, type: 3}
+  unAvailableSprite: {fileID: 21300000, guid: 2e70fd24789d6bd4aa331d7be956333b, type: 3}
   IsAvailable: 0
   buySystem: {fileID: 1952663314}
   databaseItemID: 2
@@ -4012,8 +4012,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d113d9f902b5dd498352c73aecf793b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  availableSprite: {fileID: 0}
-  unAvailableSprite: {fileID: 0}
+  availableSprite: {fileID: 21300000, guid: a387fccef32cbf444865114f0525f478, type: 3}
+  unAvailableSprite: {fileID: 21300000, guid: 4c7393dd09fa2e046b96a4a5d41f25ca, type: 3}
   IsAvailable: 0
   buySystem: {fileID: 1952663314}
   databaseItemID: 7
@@ -6546,8 +6546,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d113d9f902b5dd498352c73aecf793b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  availableSprite: {fileID: 0}
-  unAvailableSprite: {fileID: 0}
+  availableSprite: {fileID: 21300000, guid: c68e01e4d0aeb5b40a340757d2be5d82, type: 3}
+  unAvailableSprite: {fileID: 21300000, guid: 2cb4eaed7e721fc4bae340328016975a, type: 3}
   IsAvailable: 0
   buySystem: {fileID: 1952663314}
   databaseItemID: 3
@@ -7252,8 +7252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d113d9f902b5dd498352c73aecf793b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  availableSprite: {fileID: 0}
-  unAvailableSprite: {fileID: 0}
+  availableSprite: {fileID: 21300000, guid: 1bdee6392eba6e148a5f06b92c883dbc, type: 3}
+  unAvailableSprite: {fileID: 21300000, guid: 2cb4eaed7e721fc4bae340328016975a, type: 3}
   IsAvailable: 0
   buySystem: {fileID: 1952663314}
   databaseItemID: 6
