@@ -11,10 +11,14 @@ public class UnitMovement : MonoBehaviour
 
     public bool movementCommandGiven;
 
+    DirectionIndicator directionIndicator;
+
     private void Start()
     {
         cam = Camera.main;
         agent = GetComponent<NavMeshAgent>();
+
+        directionIndicator = GetComponent<DirectionIndicator>();
     }
 
     private void Update()
@@ -27,6 +31,8 @@ public class UnitMovement : MonoBehaviour
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground))
             {
                 agent.SetDestination(hit.point);
+                directionIndicator.DrawLine(hit);
+                movementCommandGiven = true;
             }
         }
 

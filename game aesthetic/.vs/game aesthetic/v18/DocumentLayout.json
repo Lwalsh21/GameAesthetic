@@ -3,40 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|c:\\users\\liamw\\onedrive\\documents\\github\\gameaesthetic\\game aesthetic\\assets\\scripts\\unitattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unitattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\assets\\scripts\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\assets\\scripts\\unitselectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unitselectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\assets\\scripts\\unitmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unitmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\assets\\scripts\\attackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\attackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|c:\\users\\liamw\\onedrive\\documents\\github\\gameaesthetic\\game aesthetic\\assets\\scripts\\house scripts\\previewsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\house scripts\\previewsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\assets\\scripts\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\assets\\scripts\\unitfollowstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unitfollowstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\assets\\scripts\\unitselectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unitselectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|c:\\users\\liamw\\onedrive\\documents\\github\\gameaesthetic\\game aesthetic\\assets\\scripts\\cursormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cursormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|c:\\users\\liamw\\onedrive\\documents\\github\\gameaesthetic\\game aesthetic\\assets\\scripts\\house scripts\\placementsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\house scripts\\placementsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|c:\\users\\liamw\\onedrive\\documents\\github\\gameaesthetic\\game aesthetic\\assets\\scripts\\house scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\house scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\assets\\scripts\\directionindicator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\directionindicator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\assets\\scripts\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|c:\\users\\liamw\\onedrive\\documents\\github\\gameaesthetic\\game aesthetic\\assets\\scripts\\unitidlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unitidlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\assets\\scripts\\unitidlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unitidlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\assets\\scripts\\attackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\attackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\assets\\scripts\\unitmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unitmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\assets\\scripts\\unitattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unitattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\assets\\scripts\\unitfollowstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unitfollowstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\assets\\scripts\\unitselectionbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,44 +74,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "CursorManager.cs",
+              "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\CursorManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CursorManager.cs",
+              "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\CursorManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CursorManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T00:47:16.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlacementSystem.cs",
+              "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\House Scripts\\PlacementSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\House Scripts\\PlacementSystem.cs",
+              "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\House Scripts\\PlacementSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\House Scripts\\PlacementSystem.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowBwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T20:37:20.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PreviewSystem.cs",
+              "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\House Scripts\\PreviewSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\House Scripts\\PreviewSystem.cs",
+              "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\House Scripts\\PreviewSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\House Scripts\\PreviewSystem.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAuwA8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T21:31:10.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\House Scripts\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\House Scripts\\UIManager.cs",
+              "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\House Scripts\\UIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\House Scripts\\UIManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T20:36:31.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DirectionIndicator.cs",
+              "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\DirectionIndicator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DirectionIndicator.cs",
+              "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\DirectionIndicator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DirectionIndicator.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T12:10:11.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "SoundManager.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\SoundManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SoundManager.cs",
               "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\SoundManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\SoundManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACySURBVDhPYxgFEHDjxY3/Xqvc/wtO5P1vvdji/40X1/9DpcBg3rm5cD4yGw6sF5v/bz7UAJZoAtIgw8ASUAAyGMpEYYMAI4gACb7P/wxmg4DuXM3/l5OvM4JsKz5cABVFBa6y7gyrgtZA9KCbig7wuYAJSpMNsBoA8gKIBnkBZiOIRmaHrQtBuMQTGGjNhxvBAk1AGhQTYAkoQHY2MhsOQNFotcgcbIPnSjfSo3FEAwYGAA95Yu3hOJS9AAAAAElFTkSuQmCC",
-              "WhenOpened": "2026-04-28T00:59:25.87Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UnitAttackState.cs",
-              "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitAttackState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UnitAttackState.cs",
-              "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitAttackState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UnitAttackState.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwD0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T00:59:25.884Z",
+              "WhenOpened": "2026-04-28T12:10:11.905Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Unit.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\Unit.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Unit.cs",
               "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\Unit.cs",
               "RelativeToolTip": "Assets\\Scripts\\Unit.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwB8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T00:59:25.891Z"
+              "WhenOpened": "2026-04-28T12:10:11.907Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -101,45 +175,10 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\UnitIdleState.cs",
               "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitIdleState.cs",
               "RelativeToolTip": "Assets\\Scripts\\UnitIdleState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACySURBVDhPYxgFEHDjxY3/Xqvc/wtO5P1vvdji/40X1/9DpcBg3rm5cD4yGw6sF5v/bz7UAJZoAtIgw8ASUAAyGMpEYYMAI4gACb7P/wxmg4DuXM3/l5OvM4JsKz5cABVFBa6y7gyrgtZA9KCbig7wuYAJSpMNsBoA8gKIBnkBZiOIRmaHrQtBuMQTGGjNhxvBAk1AGhQTYAkoQHY2MhsOQNFotcgcbIPnSjfSo3FEAwYGAA95Yu3hOJS9AAAAAElFTkSuQmCC",
-              "WhenOpened": "2026-04-28T00:59:25.893Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Enemy.cs",
-              "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\Enemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy.cs",
-              "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\Enemy.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACySURBVDhPYxgFEHDjxY3/Xqvc/wtO5P1vvdji/40X1/9DpcBg3rm5cD4yGw6sF5v/bz7UAJZoAtIgw8ASUAAyGMpEYYMAI4gACb7P/wxmg4DuXM3/l5OvM4JsKz5cABVFBa6y7gyrgtZA9KCbig7wuYAJSpMNsBoA8gKIBnkBZiOIRmaHrQtBuMQTGGjNhxvBAk1AGhQTYAkoQHY2MhsOQNFotcgcbIPnSjfSo3FEAwYGAA95Yu3hOJS9AAAAAElFTkSuQmCC",
-              "WhenOpened": "2026-04-28T00:59:25.894Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UnitFollowState.cs",
-              "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitFollowState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UnitFollowState.cs",
-              "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitFollowState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UnitFollowState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACySURBVDhPYxgFEHDjxY3/Xqvc/wtO5P1vvdji/40X1/9DpcBg3rm5cD4yGw6sF5v/bz7UAJZoAtIgw8ASUAAyGMpEYYMAI4gACb7P/wxmg4DuXM3/l5OvM4JsKz5cABVFBa6y7gyrgtZA9KCbig7wuYAJSpMNsBoA8gKIBnkBZiOIRmaHrQtBuMQTGGjNhxvBAk1AGhQTYAkoQHY2MhsOQNFotcgcbIPnSjfSo3FEAwYGAA95Yu3hOJS9AAAAAElFTkSuQmCC",
-              "WhenOpened": "2026-04-28T00:59:25.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UnitMovement.cs",
-              "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UnitMovement.cs",
-              "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitMovement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UnitMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACySURBVDhPYxgFEHDjxY3/Xqvc/wtO5P1vvdji/40X1/9DpcBg3rm5cD4yGw6sF5v/bz7UAJZoAtIgw8ASUAAyGMpEYYMAI4gACb7P/wxmg4DuXM3/l5OvM4JsKz5cABVFBa6y7gyrgtZA9KCbig7wuYAJSpMNsBoA8gKIBnkBZiOIRmaHrQtBuMQTGGjNhxvBAk1AGhQTYAkoQHY2MhsOQNFotcgcbIPnSjfSo3FEAwYGAA95Yu3hOJS9AAAAAElFTkSuQmCC",
-              "WhenOpened": "2026-04-28T00:21:37.773Z"
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T12:10:11.927Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -149,13 +188,76 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\UnitSelectionManager.cs",
               "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitSelectionManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\UnitSelectionManager.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACySURBVDhPYxgFEHDjxY3/Xqvc/wtO5P1vvdji/40X1/9DpcBg3rm5cD4yGw6sF5v/bz7UAJZoAtIgw8ASUAAyGMpEYYMAI4gACb7P/wxmg4DuXM3/l5OvM4JsKz5cABVFBa6y7gyrgtZA9KCbig7wuYAJSpMNsBoA8gKIBnkBZiOIRmaHrQtBuMQTGGjNhxvBAk1AGhQTYAkoQHY2MhsOQNFotcgcbIPnSjfSo3FEAwYGAA95Yu3hOJS9AAAAAElFTkSuQmCC",
-              "WhenOpened": "2026-04-28T00:59:25.899Z"
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAwIYAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T12:10:11.936Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy.cs",
+              "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T12:10:11.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UnitFollowState.cs",
+              "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitFollowState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UnitFollowState.cs",
+              "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitFollowState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UnitFollowState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACySURBVDhPYxgFEHDjxY3/Xqvc/wtO5P1vvdji/40X1/9DpcBg3rm5cD4yGw6sF5v/bz7UAJZoAtIgw8ASUAAyGMpEYYMAI4gACb7P/wxmg4DuXM3/l5OvM4JsKz5cABVFBa6y7gyrgtZA9KCbig7wuYAJSpMNsBoA8gKIBnkBZiOIRmaHrQtBuMQTGGjNhxvBAk1AGhQTYAkoQHY2MhsOQNFotcgcbIPnSjfSo3FEAwYGAA95Yu3hOJS9AAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-04-28T12:10:11.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AttackController.cs",
+              "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\AttackController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AttackController.cs",
+              "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\AttackController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AttackController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA5wC4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T12:10:11.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UnitAttackState.cs",
+              "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitAttackState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UnitAttackState.cs",
+              "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitAttackState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UnitAttackState.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwD0AAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACySURBVDhPYxgFEHDjxY3/Xqvc/wtO5P1vvdji/40X1/9DpcBg3rm5cD4yGw6sF5v/bz7UAJZoAtIgw8ASUAAyGMpEYYMAI4gACb7P/wxmg4DuXM3/l5OvM4JsKz5cABVFBa6y7gyrgtZA9KCbig7wuYAJSpMNsBoA8gKIBnkBZiOIRmaHrQtBuMQTGGjNhxvBAk1AGhQTYAkoQHY2MhsOQNFotcgcbIPnSjfSo3FEAwYGAA95Yu3hOJS9AAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-04-28T12:10:11.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UnitMovement.cs",
+              "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UnitMovement.cs",
+              "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UnitMovement.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCwAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACySURBVDhPYxgFEHDjxY3/Xqvc/wtO5P1vvdji/40X1/9DpcBg3rm5cD4yGw6sF5v/bz7UAJZoAtIgw8ASUAAyGMpEYYMAI4gACb7P/wxmg4DuXM3/l5OvM4JsKz5cABVFBa6y7gyrgtZA9KCbig7wuYAJSpMNsBoA8gKIBnkBZiOIRmaHrQtBuMQTGGjNhxvBAk1AGhQTYAkoQHY2MhsOQNFotcgcbIPnSjfSo3FEAwYGAA95Yu3hOJS9AAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-04-28T12:10:11.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "UnitSelectionBox.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitSelectionBox.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UnitSelectionBox.cs",
@@ -163,23 +265,11 @@
               "RelativeToolTip": "Assets\\Scripts\\UnitSelectionBox.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACySURBVDhPYxgFEHDjxY3/Xqvc/wtO5P1vvdji/40X1/9DpcBg3rm5cD4yGw6sF5v/bz7UAJZoAtIgw8ASUAAyGMpEYYMAI4gACb7P/wxmg4DuXM3/l5OvM4JsKz5cABVFBa6y7gyrgtZA9KCbig7wuYAJSpMNsBoA8gKIBnkBZiOIRmaHrQtBuMQTGGjNhxvBAk1AGhQTYAkoQHY2MhsOQNFotcgcbIPnSjfSo3FEAwYGAA95Yu3hOJS9AAAAAElFTkSuQmCC",
-              "WhenOpened": "2026-04-28T00:59:25.9Z"
+              "WhenOpened": "2026-04-28T12:10:11.937Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AttackController.cs",
-              "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\AttackController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\AttackController.cs",
-              "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\AttackController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\AttackController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T00:59:25.901Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "RTSCameraController.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\RTSCameraController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\RTSCameraController.cs",
@@ -187,7 +277,7 @@
               "RelativeToolTip": "Assets\\Scripts\\RTSCameraController.cs",
               "ViewState": "AgIAAFMAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T00:59:25.901Z"
+              "WhenOpened": "2026-04-28T12:10:11.939Z"
             }
           ]
         }
