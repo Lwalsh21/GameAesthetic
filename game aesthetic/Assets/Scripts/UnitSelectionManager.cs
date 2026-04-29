@@ -117,18 +117,17 @@ public class UnitSelectionManager : MonoBehaviour
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity, attackable) && AtleastOneOffensiveUnit(unitsSelected))
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, clickable))
         {
-            CursorManager.Instance.SetMarkerType(CursorManager.CursorType.Attackable);
+            CursorManager.Instance.SetMarkerType(CursorManager.CursorType.Selectable);
         }
         else if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground))
         {
             CursorManager.Instance.SetMarkerType(CursorManager.CursorType.Walkable);
         }
-        else if (Physics.Raycast(ray, out hit, Mathf.Infinity, clickable))
+        else if (Physics.Raycast(ray, out hit, Mathf.Infinity, attackable) && AtleastOneOffensiveUnit(unitsSelected))
         {
-            CursorManager.Instance.SetMarkerType(CursorManager.CursorType.Selectable);
+            CursorManager.Instance.SetMarkerType(CursorManager.CursorType.Attackable);
         }
         else
         {
