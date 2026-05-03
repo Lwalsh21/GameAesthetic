@@ -376,6 +376,7 @@
 "Assets/Scripts/House Scripts/InputManager.cs"
 "Assets/Scripts/House Scripts/ObjectPlacer.cs"
 "Assets/Scripts/House Scripts/ObjectsDatabseSO.cs"
+"Assets/Scripts/House Scripts/PlacementDebugger.cs"
 "Assets/Scripts/House Scripts/PlacementState.cs"
 "Assets/Scripts/House Scripts/PlacementSystem.cs"
 "Assets/Scripts/House Scripts/PreviewSystem.cs"

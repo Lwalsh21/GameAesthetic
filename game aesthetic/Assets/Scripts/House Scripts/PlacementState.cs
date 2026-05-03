@@ -59,6 +59,7 @@ public class PlacementState : IBuildingState
     public void EndState()
     {
         previewSystem.StopShowingPreview();
+        CursorManager.Instance.SetMarkerType(CursorManager.CursorType.None);
     }
 
     public void OnAction(Vector3Int gridPosition)
@@ -121,6 +122,13 @@ public class PlacementState : IBuildingState
             return;
 
         bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
+
         previewSystem.UpdatePosition(grid.CellToWorld(gridPosition), placementValidity);
+
+        // NEW: Update cursor
+        if (placementValidity)
+            CursorManager.Instance.SetMarkerType(CursorManager.CursorType.Walkable);
+        else
+            CursorManager.Instance.SetMarkerType(CursorManager.CursorType.Unavailable);
     }
 }
