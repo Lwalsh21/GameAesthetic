@@ -1,7 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,14 +8,18 @@ public class ConstructionSlot : MonoBehaviour
     public Sprite availableSprite;
     public Sprite unAvailableSprite;
 
-    public bool IsAvailable;
+    private bool IsAvailable;
 
     public BuySystem buySystem;
-
     public int databaseItemID;
-    private void Start()
+
+    private Image img;
+    private Button btn;
+
+    private void Awake()
     {
-        UpdateAvailabilityUI();
+        img = GetComponent<Image>();
+        btn = GetComponent<Button>();
     }
 
     public void ClickedOnSlot()
@@ -30,15 +32,70 @@ public class ConstructionSlot : MonoBehaviour
 
     private void UpdateAvailabilityUI()
     {
-        if (IsAvailable)
+        if (img == null || btn == null)
         {
-            GetComponent<Image>().sprite = availableSprite;
-            GetComponent<Button>().interactable = true;
+            Debug.LogError("ConstructionSlot missing Image or Button component!");
+            return;
         }
-        else
+
+        img.sprite = IsAvailable ? availableSprite : unAvailableSprite;
+        btn.interactable = IsAvailable;
+    }
+
+    private void HandleResourceChange()
+    {
+        // Ensure DatabaseManager is ready
+        if (DatabaseManager.Instance == null || DatabaseManager.Instance.databseSO == null)
+            return;
+
+        // Ensure ResourceManager is ready
+        if (ResourceManager.Instance == null)
+            return;
+
+        // Validate index
+        if (databaseItemID < 0 || databaseItemID >= DatabaseManager.Instance.databseSO.objectsData.Count)
         {
-            GetComponent<Image>().sprite = unAvailableSprite;
-            GetComponent<Button>().interactable = false;
+            Debug.LogError("Invalid databaseItemID on " + gameObject.name);
+            return;
         }
+
+        ObjectData objectData = DatabaseManager.Instance.databseSO.objectsData[databaseItemID];
+
+        // Ensure requirements list exists
+        if (objectData.requirements == null)
+        {
+            Debug.LogError("Requirements list is NULL for object: " + databaseItemID);
+            return;
+        }
+
+        bool requirementsMet = true;
+
+        foreach (BuildRequirement req in objectData.requirements)
+        {
+            if (ResourceManager.Instance.GetResourceAmount(req.resource) < req.amount)
+            {
+                requirementsMet = false;
+                break;
+            }
+        }
+
+        IsAvailable = requirementsMet;
+        UpdateAvailabilityUI();
+    }
+
+    private void OnEnable()
+    {
+        // Only subscribe when both managers exist
+        if (ResourceManager.Instance != null && DatabaseManager.Instance != null)
+        {
+            ResourceManager.Instance.OnResourceChanged += HandleResourceChange;
+            HandleResourceChange();
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (ResourceManager.Instance != null)
+            ResourceManager.Instance.OnResourceChanged -= HandleResourceChange;
     }
 }

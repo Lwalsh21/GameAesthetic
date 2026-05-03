@@ -1,47 +1,33 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlacementSystem : MonoBehaviour
 {
-
     [SerializeField] private InputManager inputManager;
     [SerializeField] private Grid grid;
-
     [SerializeField] private ObjectsDatabseSO database;
-
-    [SerializeField] private GridData floorData, furnitureData; // floor things like roads, furniture change to "buildings"
-
+    [SerializeField] private GridData floorData, furnitureData;
     [SerializeField] private PreviewSystem previewSystem;
-
-    private Vector3Int lastDetectedPosition = Vector3Int.zero;
-
     [SerializeField] private ObjectPlacer objectPlacer;
 
-    int selectedID;
-
-    IBuildingState buildingState;
+    private Vector3Int lastDetectedPosition = Vector3Int.zero;
+    private int selectedID;
+    private IBuildingState buildingState;
 
     private void Start()
     {
-
         floorData = new();
         furnitureData = new();
     }
 
-    public void StartPlacement(int ID)
+    public void StartPlacement(int id)
     {
-        Debug.Log("Should Start Placement");
+        Debug.Log($"[PlacementSystem] StartPlacement called with ID {id}");
 
-        selectedID = ID;
-
-        Debug.Log("Placement ID: " + ID);
-
+        selectedID = id;
 
         StopPlacement();
 
-        buildingState = new PlacementState(ID, grid, previewSystem, database, floorData, furnitureData, objectPlacer);
+        buildingState = new PlacementState(id, grid, previewSystem, database, floorData, furnitureData, objectPlacer);
 
         inputManager.OnClicked += PlaceStructure;
         inputManager.OnExit += StopPlacement;
@@ -59,28 +45,34 @@ public class PlacementSystem : MonoBehaviour
 
     private void PlaceStructure()
     {
-        if(inputManager.IsPointerOverUI()){
-            Debug.Log("Pointer was over UI - Returned");
+        if (inputManager.IsPointerOverUI())
+        {
+            Debug.Log("[PlacementSystem] Pointer over UI, ignoring click.");
             return;
         }
-        // When we click on a cell, we get the cell
+
+        if (buildingState == null)
+            return;
+
         Vector3 mousePosition = inputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
 
         buildingState.OnAction(gridPosition);
 
-
-        // ---- Using the ID remove used resources from resource manager ---- // 
         ObjectData ob = database.GetObjectByID(selectedID);
-       // ResourceManager.Instance.RemoveResourcesBasedOnRequirements(ob, database);
-
-        // ---- Add Buildable Benifits ---- // 
-        foreach (BuildBenefits bf in ob.benefits)
+        if (ob == null)
         {
-            CalculateAndAddBenefit(bf);
+            Debug.LogError($"[PlacementSystem] No ObjectData found for ID {selectedID} when applying benefits.");
+            StopPlacement();
+            return;
         }
 
-        // ---- Stop the placement after every build ---- // 
+        if (ob.benefits != null)
+        {
+            foreach (BuildBenefits bf in ob.benefits)
+                CalculateAndAddBenefit(bf);
+        }
+
         StopPlacement();
     }
 
@@ -89,7 +81,7 @@ public class PlacementSystem : MonoBehaviour
         switch (bf.benefitType)
         {
             case BuildBenefits.BenefitType.Housing:
-             //   StatusManager.Instance.IncreaseHousing(bf.benefitAmount);
+                // StatusManager.Instance.IncreaseHousing(bf.benefitAmount);
                 break;
         }
     }
@@ -98,24 +90,24 @@ public class PlacementSystem : MonoBehaviour
     {
         if (buildingState == null)
             return;
-       
+
         buildingState.EndState();
 
         inputManager.OnClicked -= PlaceStructure;
         inputManager.OnExit -= StopPlacement;
 
         lastDetectedPosition = Vector3Int.zero;
-
         buildingState = null;
     }
 
     private void Update()
     {
-        // We return because we did not selected an item to place (not in placement mode)
-        // So there is no need to show cell indicator
         if (buildingState == null)
+        {
+            Debug.Log("BUILDING STATE IS NULL");
             return;
-      
+        }
+
         Vector3 mousePosition = inputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
 
@@ -124,6 +116,5 @@ public class PlacementSystem : MonoBehaviour
             buildingState.UpdateState(gridPosition);
             lastDetectedPosition = gridPosition;
         }
-
     }
 }

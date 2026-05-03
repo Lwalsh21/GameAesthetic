@@ -131,7 +131,7 @@ public class UnitSelectionManager : MonoBehaviour
         }
         else
         {
-                CursorManager.Instance.SetMarkerType(CursorManager.CursorType.UnAvailable);
+                CursorManager.Instance.SetMarkerType(CursorManager.CursorType.Unavailable);
         }
     }
 

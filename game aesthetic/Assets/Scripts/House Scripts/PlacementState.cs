@@ -1,27 +1,28 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlacementState : IBuildingState
 {
     private int selectedObjectIndex = -1;
-    int ID;
-    Grid grid;
-    PreviewSystem previewSystem;
-    ObjectsDatabseSO database;
-    GridData floorData;
-    GridData furnitureData;
-    ObjectPlacer objectPlacer;
 
-    public PlacementState(int iD,
-                          Grid grid,
-                          PreviewSystem previewSystem,
-                          ObjectsDatabseSO database,
-                          GridData floorData,
-                          GridData furnitureData,
-                          ObjectPlacer objectPlacer)
+    private readonly int id;
+    private readonly Grid grid;
+    private readonly PreviewSystem previewSystem;
+    private readonly ObjectsDatabseSO database;
+    private readonly GridData floorData;
+    private readonly GridData furnitureData;
+    private readonly ObjectPlacer objectPlacer;
+
+    public PlacementState(
+        int id,
+        Grid grid,
+        PreviewSystem previewSystem,
+        ObjectsDatabseSO database,
+        GridData floorData,
+        GridData furnitureData,
+        ObjectPlacer objectPlacer)
     {
-        ID = iD;
+        this.id = id;
         this.grid = grid;
         this.previewSystem = previewSystem;
         this.database = database;
@@ -29,16 +30,30 @@ public class PlacementState : IBuildingState
         this.furnitureData = furnitureData;
         this.objectPlacer = objectPlacer;
 
-        selectedObjectIndex = database.objectsData.FindIndex(data => data.ID == ID);
-        if (selectedObjectIndex > -1)
+        selectedObjectIndex = database.objectsData.FindIndex(d => d.ID == id);
+
+        if (selectedObjectIndex < 0)
         {
-            previewSystem.StartShowingPlacementPreview(database.objectsData[selectedObjectIndex].Prefab,
-                database.objectsData[selectedObjectIndex].Size);
+            Debug.LogError($"[PlacementState] No ObjectData found for ID {id}");
+            return;
         }
-        else
+
+        ObjectData data = database.objectsData[selectedObjectIndex];
+
+        if (data == null)
         {
-            throw new System.Exception($"No object with ID {iD}");
+            Debug.LogError($"[PlacementState] ObjectData at index {selectedObjectIndex} is NULL for ID {id}");
+            return;
         }
+
+        if (data.Prefab == null)
+        {
+            Debug.LogError($"[PlacementState] Object '{data.Name}' (ID {id}) has NO prefab assigned!");
+            return;
+        }
+
+        previewSystem.StartShowingPlacementPreview(data.Prefab, data.Size);
+        Debug.Log($"[PlacementState] Started placement for '{data.Name}' (ID {id}, index {selectedObjectIndex})");
     }
 
     public void EndState()
@@ -48,46 +63,64 @@ public class PlacementState : IBuildingState
 
     public void OnAction(Vector3Int gridPosition)
     {
-        // Checking if we can place this item (position not occupied)
-        bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
-        if (placementValidity == false)
+        if (selectedObjectIndex < 0)
+            return;
+
+        ObjectData data = database.objectsData[selectedObjectIndex];
+
+        if (!CheckPlacementValidity(gridPosition, selectedObjectIndex))
         {
+            Debug.Log("[PlacementState] Invalid placement position.");
             return;
         }
 
-        int index = objectPlacer.PlaceObject(database.objectsData[selectedObjectIndex].Prefab, grid.CellToWorld(gridPosition));
+        int placedIndex = objectPlacer.PlaceObject(
+            data.Prefab,
+            grid.CellToWorld(gridPosition));
 
-        // If this id is a floor id, then its a floor data, else its a furniture data
-        GridData selectedData = GetAllFloorIDs().Contains(database.objectsData[selectedObjectIndex].ID) ? floorData : furnitureData;
-       
-        selectedData.AddObjectAt(gridPosition,
-            database.objectsData[selectedObjectIndex].Size,
-            database.objectsData[selectedObjectIndex].ID,
-            index);
+        if (ResourceManager.Instance != null)
+        {
+            ResourceManager.Instance.RemoveResourcesBasedOnRequirement(data);
+        }
+        else
+        {
+            Debug.LogWarning("[PlacementState] ResourceManager.Instance is null, cannot remove resources.");
+        }
+
+        GridData selectedData = GetAllFloorIDs().Contains(data.ID) ? floorData : furnitureData;
+
+        selectedData.AddObjectAt(
+            gridPosition,
+            data.Size,
+            data.ID,
+            placedIndex);
 
         previewSystem.UpdatePosition(grid.CellToWorld(gridPosition), false);
     }
 
-    // When you have more floor objects add their id here
     private List<int> GetAllFloorIDs()
     {
-        return new List<int> { 11 }; // These are all the ids of floor items - For now its only the grass
+        // Add all IDs that should be treated as floor here
+        return new List<int> { 11 };
     }
 
     private bool CheckPlacementValidity(Vector3Int gridPosition, int selectedObjectIndex)
     {
-      
+        if (selectedObjectIndex < 0)
+            return false;
 
-        GridData selectedData = GetAllFloorIDs().Contains(database.objectsData[selectedObjectIndex].ID) ? floorData : furnitureData;
+        ObjectData data = database.objectsData[selectedObjectIndex];
+        GridData selectedData = GetAllFloorIDs().Contains(data.ID) ? floorData : furnitureData;
 
-        return selectedData.CanPlaceObjectAt(gridPosition, database.objectsData[selectedObjectIndex].Size);
+        return selectedData.CanPlaceObjectAt(gridPosition, data.Size);
     }
 
     public void UpdateState(Vector3Int gridPosition)
     {
-        // Show the player if he can place the item
-        bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
+        if (selectedObjectIndex < 0)
+            return;
 
+        bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
         previewSystem.UpdatePosition(grid.CellToWorld(gridPosition), placementValidity);
     }
 }
