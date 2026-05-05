@@ -75,33 +75,39 @@ public class PlacementState : IBuildingState
             return;
         }
 
-        int placedIndex = objectPlacer.PlaceObject(
-            data.Prefab,
-            grid.CellToWorld(gridPosition));
+        // Convert grid cell to world position
+        Vector3 basePos = grid.CellToWorld(gridPosition);
 
-        if (ResourceManager.Instance != null)
-        {
-            ResourceManager.Instance.RemoveResourcesBasedOnRequirement(data);
-        }
-        else
-        {
-            Debug.LogWarning("[PlacementState] ResourceManager.Instance is null, cannot remove resources.");
-        }
+        // ⭐ QUICK FIX: force height to 1
+        basePos.y = 1f;
 
+        // Instantiate the object
+        GameObject placedObj = objectPlacer.PlaceObjectAndReturn(data.Prefab);
+
+        // Apply forced height
+        placedObj.transform.position = basePos;
+
+        // Register in grid data
         GridData selectedData = GetAllFloorIDs().Contains(data.ID) ? floorData : furnitureData;
 
         selectedData.AddObjectAt(
             gridPosition,
             data.Size,
             data.ID,
-            placedIndex);
+            placedObj.GetInstanceID());
 
-        previewSystem.UpdatePosition(grid.CellToWorld(gridPosition), false);
+        // Remove resources
+        if (ResourceManager.Instance != null)
+            ResourceManager.Instance.RemoveResourcesBasedOnRequirement(data);
+        else
+            Debug.LogWarning("[PlacementState] ResourceManager.Instance is null, cannot remove resources.");
+
+        // Update preview
+        previewSystem.UpdatePosition(basePos, false);
     }
 
     private List<int> GetAllFloorIDs()
     {
-        // Add all IDs that should be treated as floor here
         return new List<int> { 11 };
     }
 
@@ -125,7 +131,6 @@ public class PlacementState : IBuildingState
 
         previewSystem.UpdatePosition(grid.CellToWorld(gridPosition), placementValidity);
 
-        // NEW: Update cursor
         if (placementValidity)
             CursorManager.Instance.SetMarkerType(CursorManager.CursorType.Walkable);
         else

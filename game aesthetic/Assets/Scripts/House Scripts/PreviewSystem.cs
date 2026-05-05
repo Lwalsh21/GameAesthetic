@@ -5,22 +5,29 @@ using UnityEngine;
 
 public class PreviewSystem : MonoBehaviour
 {
-    [SerializeField] 
+    [SerializeField]
     private float previewYOffset = 0.06f;
 
     private GameObject previewObject;
 
-    [SerializeField] 
+    [SerializeField]
     private Material previewMaterialPrefab;
     private Material previewMaterialInstance;
-    
 
     private void Start()
     {
         previewMaterialInstance = new Material(previewMaterialPrefab);
     }
+
     public void StartShowingPlacementPreview(GameObject prefab, Vector2Int size)
     {
+        // Clean up any existing preview first
+        if (previewObject != null)
+        {
+            Destroy(previewObject);
+            previewObject = null;
+        }
+
         previewObject = Instantiate(prefab);
         PreparePreview(previewObject);
     }
@@ -32,23 +39,15 @@ public class PreviewSystem : MonoBehaviour
 
     private void PreparePreview(GameObject previewObject)
     {
-        // Change the materials of the prefab (and its children) to semi-transparent
-
         Renderer[] renderers = previewObject.GetComponentsInChildren<Renderer>();
         foreach (Renderer renderer in renderers)
         {
             Material[] materials = renderer.materials;
             for (int i = 0; i < materials.Length; i++)
             {
-                // Getting the current material color
                 Color color = materials[i].color;
-     
-                // changing its alpha
                 color.a = 0.5f;
-
-                // setting the modified color
                 materials[i].color = color;
-
 
                 materials[i] = previewMaterialInstance;
             }
@@ -62,6 +61,7 @@ public class PreviewSystem : MonoBehaviour
         if (previewObject != null)
         {
             Destroy(previewObject);
+            previewObject = null;
         }
     }
 
@@ -72,7 +72,7 @@ public class PreviewSystem : MonoBehaviour
             MovePreview(position);
             ApplyFeedbackToPreview(validity);
         }
-      
+
         ApplyFeedbackToCursor(validity);
     }
 
@@ -91,12 +91,17 @@ public class PreviewSystem : MonoBehaviour
 
         Color finalColor = c * Mathf.LinearToGammaSpace(1);
         previewMaterialInstance.SetColor("_EmissionColor", finalColor);
-
     }
 
+    // ⭐ QUICK FIX: Force preview height to Y = 1 (plus your offset)
     private void MovePreview(Vector3 position)
     {
-        previewObject.transform.position = new Vector3(position.x, position.y + previewYOffset, position.z);
-    }
+        if (previewObject == null)
+            return;
 
+        // Force preview height
+        position.y = 1f + previewYOffset;
+
+        previewObject.transform.position = position;
+    }
 }
