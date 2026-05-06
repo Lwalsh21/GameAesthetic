@@ -61,6 +61,7 @@ public class PreviewSystem : MonoBehaviour
         if (previewObject != null)
         {
             Destroy(previewObject);
+            Destroy(previewObject);
             previewObject = null;
         }
     }
@@ -93,14 +94,31 @@ public class PreviewSystem : MonoBehaviour
         previewMaterialInstance.SetColor("_EmissionColor", finalColor);
     }
 
-    // ⭐ QUICK FIX: Force preview height to Y = 1 (plus your offset)
+    // ⭐ NEW: Get mesh bottom offset so preview sits correctly even if pivot is wrong
+    private float GetMeshBottomOffset(GameObject obj)
+    {
+        MeshRenderer renderer = obj.GetComponentInChildren<MeshRenderer>();
+        if (renderer == null)
+            return 0f;
+
+        return -renderer.bounds.min.y;
+    }
+
+    // ⭐ UPDATED: Terrain-aware + mesh-offset-aware preview movement
     private void MovePreview(Vector3 position)
     {
         if (previewObject == null)
             return;
 
-        // Force preview height
-        position.y = 1f + previewYOffset;
+        // ⭐ Terrain height
+        position.y = Terrain.activeTerrain.SampleHeight(position);
+
+        // ⭐ Mesh bottom offset
+        float offset = GetMeshBottomOffset(previewObject);
+        position.y += offset;
+
+        // ⭐ Optional tiny lift to avoid clipping
+        position.y += previewYOffset;
 
         previewObject.transform.position = position;
     }

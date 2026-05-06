@@ -64,7 +64,17 @@ public class PlacementState : IBuildingState
 
     public bool IsFloor(int id)
     {
-        return id == 11; // or whatever your floor IDs are
+        return id == 11;
+    }
+
+    // ⭐ Mesh bottom offset helper
+    private float GetMeshBottomOffset(GameObject obj)
+    {
+        MeshRenderer renderer = obj.GetComponentInChildren<MeshRenderer>();
+        if (renderer == null)
+            return 0f;
+
+        return -renderer.bounds.min.y;
     }
 
     public void OnAction(Vector3Int gridPosition)
@@ -91,18 +101,25 @@ public class PlacementState : IBuildingState
             }
         }
 
-        // Convert grid cell to world position
+        // ⭐ Convert grid cell to world position (terrain-aware)
         Vector3 basePos = grid.CellToWorld(gridPosition);
-        basePos.y = 1f; // force height
+        basePos.y = Terrain.activeTerrain.SampleHeight(basePos);
 
-        // Instantiate the object
+        // ⭐ Instantiate the object FIRST
         GameObject placedObj = objectPlacer.PlaceObjectAndReturn(data.Prefab);
+
+        // ⭐ Apply mesh bottom offset
+        float offset = GetMeshBottomOffset(placedObj);
+        basePos.y += offset;
+
         placedObj.transform.position = basePos;
 
+        // Determine which grid to write to
         GridData gridToWrite = data.restrictPlacement
-        ? (GetAllFloorIDs().Contains(data.ID) ? floorData : furnitureData)
-        : null;
+            ? (GetAllFloorIDs().Contains(data.ID) ? floorData : furnitureData)
+            : null;
 
+        // Add health component
         BuildingHealth health = placedObj.AddComponent<BuildingHealth>();
         health.Initialize(data.ID, gridPosition, data.Size, gridToWrite);
 
@@ -132,8 +149,11 @@ public class PlacementState : IBuildingState
         foreach (var slot in slots)
             slot.SendMessage("HandleResourceChange", SendMessageOptions.DontRequireReceiver);
 
-        // Update preview
-        previewSystem.UpdatePosition(basePos, false);
+        // ⭐ Update preview position (terrain-aware)
+        Vector3 previewPos = grid.CellToWorld(gridPosition);
+        previewPos.y = Terrain.activeTerrain.SampleHeight(previewPos);
+
+        previewSystem.UpdatePosition(previewPos, false);
     }
 
     private List<int> GetAllFloorIDs()
@@ -148,7 +168,6 @@ public class PlacementState : IBuildingState
 
         ObjectData data = database.objectsData[selectedObjectIndex];
 
-        // ⭐ If unrestricted, always valid
         if (!data.restrictPlacement)
             return true;
 
@@ -168,7 +187,6 @@ public class PlacementState : IBuildingState
 
         if (!data.restrictPlacement)
         {
-            // ⭐ Always valid if unrestricted
             placementValidity = depsMet;
         }
         else
@@ -177,7 +195,11 @@ public class PlacementState : IBuildingState
                                 CheckPlacementValidity(gridPosition, selectedObjectIndex);
         }
 
-        previewSystem.UpdatePosition(grid.CellToWorld(gridPosition), placementValidity);
+        // ⭐ Terrain-aware preview height
+        Vector3 previewPos = grid.CellToWorld(gridPosition);
+        previewPos.y = Terrain.activeTerrain.SampleHeight(previewPos);
+
+        previewSystem.UpdatePosition(previewPos, placementValidity);
 
         CursorManager.Instance.SetMarkerType(
             placementValidity ? CursorManager.CursorType.Walkable

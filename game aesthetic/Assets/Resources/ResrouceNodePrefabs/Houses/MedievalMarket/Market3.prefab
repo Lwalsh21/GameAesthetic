@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8450213151710822095}
   - component: {fileID: 374605461737203257}
   - component: {fileID: 1863702026025700908}
+  - component: {fileID: 491036026983181616}
+  - component: {fileID: 2471297722870301901}
   m_Layer: 0
   m_Name: Market3
   m_TagString: Untagged
@@ -26,9 +28,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5615160385312095532}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000006717942, y: 0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.56, y: 0.18012238, z: 1.17096}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,3 +85,31 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &491036026983181616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5615160385312095532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1d8518716c2c3a4d9e4cfaaa66de741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!208 &2471297722870301901
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5615160385312095532}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.381, y: 0.32500002, z: 0.36200002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.022000002, y: 0.32500002, z: -0.011000001}
+  m_TimeToStationary: 0.5

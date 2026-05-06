@@ -13,68 +13,66 @@ MonoBehaviour:
   m_Name: Database
   m_EditorClassIdentifier: 
   objectsData:
-  - <Name>k__BackingField: House 1
+  - <Name>k__BackingField: MedievalCastle
     <ID>k__BackingField: 1
     description: 
-    <Size>k__BackingField: {x: 5, y: 4}
-    <Prefab>k__BackingField: {fileID: 3262204426430166457, guid: 312ffeabe2321e5469049322e9e251da, type: 3}
+    <Size>k__BackingField: {x: 8, y: 8}
+    <Prefab>k__BackingField: {fileID: 4141814324093715949, guid: 1d59436f3ba7f744787f818db3c7438a, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
     <requiredBuildingIDs>k__BackingField: 
     <requiredEvents>k__BackingField: []
     <restrictPlacement>k__BackingField: 0
     <sellValue>k__BackingField: 0
-  - <Name>k__BackingField: House 2
+  - <Name>k__BackingField: MedievalHouse
     <ID>k__BackingField: 2
     description: 
-    <Size>k__BackingField: {x: 5, y: 2}
-    <Prefab>k__BackingField: {fileID: 1063658402981691682, guid: b1667a5e04af74d48819794cbd9e27b2, type: 3}
-    <requirements>k__BackingField:
-    - resource: 0
-      amount: 100
+    <Size>k__BackingField: {x: 4, y: 4}
+    <Prefab>k__BackingField: {fileID: 2976977219946671025, guid: af3e3cf0301cb03488447dad92bdbd06, type: 3}
+    <requirements>k__BackingField: []
     <benefits>k__BackingField: []
     <requiredBuildingIDs>k__BackingField: 
     <requiredEvents>k__BackingField: []
     <restrictPlacement>k__BackingField: 0
     <sellValue>k__BackingField: 0
-  - <Name>k__BackingField: House 3
+  - <Name>k__BackingField: MedievalLibrary
     <ID>k__BackingField: 3
     description: 
-    <Size>k__BackingField: {x: 5, y: 4}
-    <Prefab>k__BackingField: {fileID: 6227132683893324587, guid: d49c26ae4bb110b4b89e35fe32e4df5f, type: 3}
+    <Size>k__BackingField: {x: 7, y: 5}
+    <Prefab>k__BackingField: {fileID: 3258681737683552535, guid: c908ba53e33034a4cb992c1b65e81f12, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
-    <requiredBuildingIDs>k__BackingField: 01000000
+    <requiredBuildingIDs>k__BackingField: 
     <requiredEvents>k__BackingField: []
     <restrictPlacement>k__BackingField: 0
     <sellValue>k__BackingField: 0
-  - <Name>k__BackingField: House 4
+  - <Name>k__BackingField: MedievalBarracks
     <ID>k__BackingField: 4
     description: 
-    <Size>k__BackingField: {x: 5, y: 2}
-    <Prefab>k__BackingField: {fileID: 1216782423788081669, guid: 779cb7a0b0ad04f47af0f2c2c28fcef4, type: 3}
+    <Size>k__BackingField: {x: 3, y: 5}
+    <Prefab>k__BackingField: {fileID: 8312864001070763044, guid: 7cf18cbfa20c2ee4babcd16551fb33b6, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
     <requiredBuildingIDs>k__BackingField: 
     <requiredEvents>k__BackingField: []
     <restrictPlacement>k__BackingField: 0
     <sellValue>k__BackingField: 0
-  - <Name>k__BackingField: House 5
+  - <Name>k__BackingField: Market
     <ID>k__BackingField: 5
     description: 
-    <Size>k__BackingField: {x: 4, y: 3}
-    <Prefab>k__BackingField: {fileID: 2127693712079416045, guid: a883aae1b1d862745a6339681abb5043, type: 3}
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 5615160385312095532, guid: 963a744c0b7727b4f9b1f15dc3732123, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
     <requiredBuildingIDs>k__BackingField: 
     <requiredEvents>k__BackingField: []
     <restrictPlacement>k__BackingField: 0
     <sellValue>k__BackingField: 0
-  - <Name>k__BackingField: House 6
+  - <Name>k__BackingField: MedievalBlacksmith
     <ID>k__BackingField: 6
     description: 
     <Size>k__BackingField: {x: 3, y: 3}
-    <Prefab>k__BackingField: {fileID: 8245950614846504859, guid: 0e5f746d27ba03242969fc0cd4121a3a, type: 3}
+    <Prefab>k__BackingField: {fileID: 1830978423534532785, guid: b3d189fcff282274dbe5335d5fd3bbfd, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
     <requiredBuildingIDs>k__BackingField: 

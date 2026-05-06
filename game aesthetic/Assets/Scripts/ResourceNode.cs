@@ -9,6 +9,14 @@ public class ResourceNode : MonoBehaviour
 
     public bool IsDepleted => totalAmount <= 0;
 
+    private void Start()
+    {
+        // ⭐ Snap to terrain height
+        Vector3 pos = transform.position;
+        pos.y = Terrain.activeTerrain.SampleHeight(pos);
+        transform.position = pos;
+    }
+
     // Called by workers or gathering systems
     public int Gather()
     {
