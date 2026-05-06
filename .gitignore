@@ -1,5 +1,67 @@
-/Library
-/Artifact
-/Library/Artifact
-/Temp
-*.log
+# ========== UNITY PROJECT IGNORE RULES ==========
+
+# --- Core Unity generated folders ---
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+UserSettings/
+MemoryCaptures/
+Artifacts/
+
+# --- Unity cache ---
+/Assets/AssetStoreTools*
+
+# --- Ignore auto-generated VS/JetBrains files ---
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# --- OS-specific ---
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# --- IDE-specific ---
+# JetBrains Rider
+.idea/
+*.iml
+
+# --- Build output ---
+*.apk
+*.aab
+*.xcodeproj
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata/
+
+# --- Large binary assets you should NOT commit ---
+# (Unity loads these from disk; they don't belong in Git)
+*.psd
+*.tif
+*.tiff
+*.blend
+*.fbx
+*.wav
+*.mp4
+*.mov
+*.avi
+
+# If you DO want to track these, use Git LFS instead.
