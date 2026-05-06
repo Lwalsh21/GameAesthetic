@@ -16,6 +16,7 @@ public class InputManager : MonoBehaviour
     {
         UpdateMouseWorldPosition();
 
+        // UI-safe click
         if (Input.GetMouseButtonDown(0) && !IsPointerOverUI())
             OnClicked?.Invoke();
 
@@ -25,28 +26,20 @@ public class InputManager : MonoBehaviour
 
     public bool IsPointerOverUI()
     {
-        // Works even when cursor is hidden or replaced
-        PointerEventData eventData = new PointerEventData(EventSystem.current);
-        eventData.position = Input.mousePosition;
-
-        var results = new System.Collections.Generic.List<RaycastResult>();
-        EventSystem.current.RaycastAll(eventData, results);
-
-        return results.Count > 0;
+        // Reliable UI detection
+        return EventSystem.current.IsPointerOverGameObject();
     }
 
     private void UpdateMouseWorldPosition()
     {
         Ray ray = sceneCamera.ScreenPointToRay(Input.mousePosition);
 
-        // First try: real collider raycast
         if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, placementLayerMask))
         {
             lastPosition = hit.point;
             return;
         }
 
-        // Second try: ground plane fallback
         Plane ground = new Plane(Vector3.up, Vector3.zero);
         if (ground.Raycast(ray, out float distance))
         {

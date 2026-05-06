@@ -2,9 +2,14 @@ Library\Bee\artifacts\mvdfrm\Unity.AI.Navigation.Editor.ConversionSystem.ref.dll
 Library\Bee\artifacts\mvdfrm\Unity.AI.Navigation.Editor.ref.dll_7989A1C8D57EF9BF.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.AI.Navigation.Updater.ref.dll_34B8D5B7DED6E76D.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.AI.Navigation.ref.dll_407F07063643C512.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Burst.Editor.ref.dll_E2F92DAB6C167CC9.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Burst.ref.dll_F30DFA20C0DD1968.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Collections.ref.dll_656D7410E7809ECD.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.EditorCoroutines.Editor.ref.dll_34ED10A34098B2DB.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.InputSystem.ForUI.ref.dll_0478B67D1094CE70.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.InputSystem.ref.dll_FD2EC87C14EBE081.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Mathematics.Editor.ref.dll_9A20CFD48BC11F43.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Mathematics.ref.dll_E8EFDB1B8D5C174E.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Performance.Profile-Analyzer.Editor.ref.dll_65A192712782EB2B.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.PlasticSCM.Editor.ref.dll_257AEB342BE77856.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Rider.Editor.ref.dll_9B5591808ABA37AF.mvfrm
@@ -110,4 +115,5 @@ Library\Bee\artifacts\mvdfrm\UnityEngine.VirtualTexturingModule.dll_A82BEB7D7074
 Library\Bee\artifacts\mvdfrm\UnityEngine.VRModule.dll_E91BE542D24743C5.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.WindModule.dll_C11B859F2DFACF81.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.XRModule.dll_1BDAA8475B819123.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Collections.LowLevel.ILSupport.dll_2E40CE80E145E521.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Antlr3.Runtime.dll_2521796BDD14ED74.mvfrm

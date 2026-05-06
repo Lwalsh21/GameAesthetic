@@ -1,43 +1,45 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices.WindowsRuntime;
 using System;
+using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class ResourceManager : MonoBehaviour
 {
-    public static ResourceManager Instance { get; set; }
+    public static ResourceManager Instance { get; private set; }
 
+    // Actual resource storage
+    private Dictionary<ResourcesType, int> resources = new Dictionary<ResourcesType, int>();
 
-    private int mana;
-    private int gold;
-    private int wood;
-    private int stone;
-
+    [Header("UI References")]
     public TextMeshProUGUI manaUI;
+    public TextMeshProUGUI foodUI;
+    public TextMeshProUGUI woodUI;
+    public TextMeshProUGUI stoneUI;
 
-    // added .system to this line of code to avoid conflict with UnityEngine.Events.UnityEvent
-    public event System.Action OnResourceChanged;
+    // Event for UI updates
+    public event Action OnResourceChanged;
+
+    public enum ResourcesType
+    {
+        Mana,
+        Food,
+        Wood,
+        Stone
+    }
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
+            return;
         }
-        else
-        {
-            Instance = this;
-        }
-    }
 
-    public enum ResourcesType
-    {
-        Mana,
-        Gold,
-        Wood,
-        Stone
+        Instance = this;
+
+        // Initialize all resources to 0
+        foreach (ResourcesType type in Enum.GetValues(typeof(ResourcesType)))
+            resources[type] = 0;
     }
 
     private void Start()
@@ -45,64 +47,50 @@ public class ResourceManager : MonoBehaviour
         UpdateUI();
     }
 
-    public void IncreaseResource(ResourcesType resource, int amountToIncrease)
+    // ⭐ Add resources
+    public void IncreaseResource(ResourcesType resource, int amount)
     {
-        switch (resource)
-        {
-            case ResourcesType.Mana:
-                mana += amountToIncrease;
-                break;
-            default:
-                break;
-        }
+        resources[resource] += amount;
+        OnResourceChanged?.Invoke();
+    }
+
+    // ⭐ Spend resources
+    public void DecreaseResource(ResourcesType resource, int amount)
+    {
+        resources[resource] -= amount;
+        if (resources[resource] < 0)
+            resources[resource] = 0;
 
         OnResourceChanged?.Invoke();
     }
 
-    public void DecreaseResource(ResourcesType resource, int amountToDecrease)
+    public void AddResource(ResourcesType resource, int amount)
     {
-        switch (resource)
-        {
-            case ResourcesType.Mana:
-                mana -= amountToDecrease;
-                break;
-            default:
-                break;
-        }
-
-        OnResourceChanged?.Invoke();
+        IncreaseResource(resource, amount);
     }
 
-
-    private void UpdateUI()
+    // ⭐ Get resource amount
+    public int GetResourceAmount(ResourcesType resource)
     {
-        manaUI.text = $"{mana}";
+        return resources[resource];
     }
 
-    public int Getmana()
-    {
-        return mana;
-    }
-
-    internal int GetResourceAmount(ResourcesType resource)
-    {
-        switch (resource)
-        {
-            case ResourcesType.Mana:
-                return mana;
-            default:
-                break;
-        }
-
-        return 0;
-    }
-
-    internal void RemoveResourcesBasedOnRequirement(ObjectData objectData)
+    // ⭐ Remove resources based on building requirements
+    public void RemoveResourcesBasedOnRequirement(ObjectData objectData)
     {
         foreach (BuildRequirement req in objectData.requirements)
         {
             DecreaseResource(req.resource, req.amount);
         }
+    }
+
+    // ⭐ UI update
+    private void UpdateUI()
+    {
+        if (manaUI != null) manaUI.text = resources[ResourcesType.Mana].ToString();
+        if (foodUI != null) foodUI.text = resources[ResourcesType.Food].ToString();
+        if (woodUI != null) woodUI.text = resources[ResourcesType.Wood].ToString();
+        if (stoneUI != null) stoneUI.text = resources[ResourcesType.Stone].ToString();
     }
 
     private void OnEnable()

@@ -12,7 +12,8 @@ public class BuySystem : MonoBehaviour
     public Button buildingsButton;
     public Button unitsButton;
 
-    public PlacementSystem placementSystem; 
+    public PlacementSystem placementSystem;
+    
 
     private void Start()
     {

@@ -28,6 +28,10 @@ public class ConstructionSlot : MonoBehaviour
         {
             buySystem.placementSystem.StartPlacement(databaseItemID);
         }
+        else
+        {
+            Debug.Log($"[ConstructionSlot] Cannot build item {databaseItemID}. Requirements not met.");
+        }
     }
 
     private void UpdateAvailabilityUI()
@@ -44,11 +48,9 @@ public class ConstructionSlot : MonoBehaviour
 
     private void HandleResourceChange()
     {
-        // Ensure DatabaseManager is ready
+        // Ensure managers exist
         if (DatabaseManager.Instance == null || DatabaseManager.Instance.databseSO == null)
             return;
-
-        // Ensure ResourceManager is ready
         if (ResourceManager.Instance == null)
             return;
 
@@ -61,31 +63,29 @@ public class ConstructionSlot : MonoBehaviour
 
         ObjectData objectData = DatabaseManager.Instance.databseSO.objectsData[databaseItemID];
 
-        // Ensure requirements list exists
-        if (objectData.requirements == null)
-        {
-            Debug.LogError("Requirements list is NULL for object: " + databaseItemID);
-            return;
-        }
-
-        bool requirementsMet = true;
+        // ⭐ 1. Check resource requirements
+        bool resourceRequirementsMet = true;
 
         foreach (BuildRequirement req in objectData.requirements)
         {
             if (ResourceManager.Instance.GetResourceAmount(req.resource) < req.amount)
             {
-                requirementsMet = false;
+                resourceRequirementsMet = false;
                 break;
             }
         }
 
-        IsAvailable = requirementsMet;
+        // ⭐ 2. Check dependency requirements
+        bool dependencyRequirementsMet = DependencyManager.Instance.AreRequirementsMet(objectData);
+
+        // ⭐ 3. Combine both
+        IsAvailable = resourceRequirementsMet && dependencyRequirementsMet;
+
         UpdateAvailabilityUI();
     }
 
     private void OnEnable()
     {
-        // Only subscribe when both managers exist
         if (ResourceManager.Instance != null && DatabaseManager.Instance != null)
         {
             ResourceManager.Instance.OnResourceChanged += HandleResourceChange;

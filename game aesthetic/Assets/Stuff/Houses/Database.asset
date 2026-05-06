@@ -20,13 +20,23 @@ MonoBehaviour:
     <Prefab>k__BackingField: {fileID: 3262204426430166457, guid: 312ffeabe2321e5469049322e9e251da, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
+    <requiredBuildingIDs>k__BackingField: 
+    <requiredEvents>k__BackingField: []
+    <restrictPlacement>k__BackingField: 0
+    <sellValue>k__BackingField: 0
   - <Name>k__BackingField: House 2
     <ID>k__BackingField: 2
     description: 
     <Size>k__BackingField: {x: 5, y: 2}
     <Prefab>k__BackingField: {fileID: 1063658402981691682, guid: b1667a5e04af74d48819794cbd9e27b2, type: 3}
-    <requirements>k__BackingField: []
+    <requirements>k__BackingField:
+    - resource: 0
+      amount: 100
     <benefits>k__BackingField: []
+    <requiredBuildingIDs>k__BackingField: 
+    <requiredEvents>k__BackingField: []
+    <restrictPlacement>k__BackingField: 0
+    <sellValue>k__BackingField: 0
   - <Name>k__BackingField: House 3
     <ID>k__BackingField: 3
     description: 
@@ -34,6 +44,10 @@ MonoBehaviour:
     <Prefab>k__BackingField: {fileID: 6227132683893324587, guid: d49c26ae4bb110b4b89e35fe32e4df5f, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
+    <requiredBuildingIDs>k__BackingField: 01000000
+    <requiredEvents>k__BackingField: []
+    <restrictPlacement>k__BackingField: 0
+    <sellValue>k__BackingField: 0
   - <Name>k__BackingField: House 4
     <ID>k__BackingField: 4
     description: 
@@ -41,6 +55,10 @@ MonoBehaviour:
     <Prefab>k__BackingField: {fileID: 1216782423788081669, guid: 779cb7a0b0ad04f47af0f2c2c28fcef4, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
+    <requiredBuildingIDs>k__BackingField: 
+    <requiredEvents>k__BackingField: []
+    <restrictPlacement>k__BackingField: 0
+    <sellValue>k__BackingField: 0
   - <Name>k__BackingField: House 5
     <ID>k__BackingField: 5
     description: 
@@ -48,6 +66,10 @@ MonoBehaviour:
     <Prefab>k__BackingField: {fileID: 2127693712079416045, guid: a883aae1b1d862745a6339681abb5043, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
+    <requiredBuildingIDs>k__BackingField: 
+    <requiredEvents>k__BackingField: []
+    <restrictPlacement>k__BackingField: 0
+    <sellValue>k__BackingField: 0
   - <Name>k__BackingField: House 6
     <ID>k__BackingField: 6
     description: 
@@ -55,6 +77,10 @@ MonoBehaviour:
     <Prefab>k__BackingField: {fileID: 8245950614846504859, guid: 0e5f746d27ba03242969fc0cd4121a3a, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
+    <requiredBuildingIDs>k__BackingField: 
+    <requiredEvents>k__BackingField: []
+    <restrictPlacement>k__BackingField: 0
+    <sellValue>k__BackingField: 0
   - <Name>k__BackingField: House 7
     <ID>k__BackingField: 7
     description: 
@@ -62,6 +88,10 @@ MonoBehaviour:
     <Prefab>k__BackingField: {fileID: 5733407231489956976, guid: 2a0ece68255eb5049a7e9208b40fda11, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
+    <requiredBuildingIDs>k__BackingField: 
+    <requiredEvents>k__BackingField: []
+    <restrictPlacement>k__BackingField: 0
+    <sellValue>k__BackingField: 0
   - <Name>k__BackingField: House 8
     <ID>k__BackingField: 8
     description: 
@@ -69,6 +99,10 @@ MonoBehaviour:
     <Prefab>k__BackingField: {fileID: 8958524488332362436, guid: 5a3c3f5a037e45546afc0e888f70ddaa, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
+    <requiredBuildingIDs>k__BackingField: 
+    <requiredEvents>k__BackingField: []
+    <restrictPlacement>k__BackingField: 0
+    <sellValue>k__BackingField: 0
   - <Name>k__BackingField: House 9
     <ID>k__BackingField: 9
     description: 
@@ -76,6 +110,10 @@ MonoBehaviour:
     <Prefab>k__BackingField: {fileID: 3663766894661228548, guid: 7b30673aa5959e54da500f7ad43b8f5c, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
+    <requiredBuildingIDs>k__BackingField: 
+    <requiredEvents>k__BackingField: []
+    <restrictPlacement>k__BackingField: 0
+    <sellValue>k__BackingField: 0
   - <Name>k__BackingField: House 10
     <ID>k__BackingField: 10
     description: 
@@ -83,6 +121,10 @@ MonoBehaviour:
     <Prefab>k__BackingField: {fileID: 6945052419556207860, guid: ecee25394617c4b45bf76c26394b763e, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
+    <requiredBuildingIDs>k__BackingField: 
+    <requiredEvents>k__BackingField: []
+    <restrictPlacement>k__BackingField: 0
+    <sellValue>k__BackingField: 0
   - <Name>k__BackingField: House 11
     <ID>k__BackingField: 11
     description: 
@@ -90,6 +132,10 @@ MonoBehaviour:
     <Prefab>k__BackingField: {fileID: 2381037274744472846, guid: e05edc281753d3d4d9e62d2be2ef4f80, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
+    <requiredBuildingIDs>k__BackingField: 
+    <requiredEvents>k__BackingField: []
+    <restrictPlacement>k__BackingField: 0
+    <sellValue>k__BackingField: 0
   - <Name>k__BackingField: House 12
     <ID>k__BackingField: 12
     description: 
@@ -97,6 +143,10 @@ MonoBehaviour:
     <Prefab>k__BackingField: {fileID: 3574210620219175600, guid: 0fc31e5e40967634f95794d73c644463, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
+    <requiredBuildingIDs>k__BackingField: 
+    <requiredEvents>k__BackingField: []
+    <restrictPlacement>k__BackingField: 0
+    <sellValue>k__BackingField: 0
   - <Name>k__BackingField: House 13
     <ID>k__BackingField: 13
     description: 
@@ -104,6 +154,10 @@ MonoBehaviour:
     <Prefab>k__BackingField: {fileID: 7167456348929125924, guid: 067f25e2d08255546929472e62d984f8, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
+    <requiredBuildingIDs>k__BackingField: 
+    <requiredEvents>k__BackingField: []
+    <restrictPlacement>k__BackingField: 0
+    <sellValue>k__BackingField: 0
   - <Name>k__BackingField: House 14
     <ID>k__BackingField: 14
     description: 
@@ -111,6 +165,10 @@ MonoBehaviour:
     <Prefab>k__BackingField: {fileID: 6315942386212721955, guid: f5ebf8004a949cb4dab8d7112eb5a5df, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
+    <requiredBuildingIDs>k__BackingField: 
+    <requiredEvents>k__BackingField: []
+    <restrictPlacement>k__BackingField: 0
+    <sellValue>k__BackingField: 0
   - <Name>k__BackingField: House 15
     <ID>k__BackingField: 16
     description: 
@@ -118,6 +176,10 @@ MonoBehaviour:
     <Prefab>k__BackingField: {fileID: 5346506436500886297, guid: b11bbdc5e9fe2d7429478a4592e44a2d, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
+    <requiredBuildingIDs>k__BackingField: 
+    <requiredEvents>k__BackingField: []
+    <restrictPlacement>k__BackingField: 0
+    <sellValue>k__BackingField: 0
   - <Name>k__BackingField: House 16
     <ID>k__BackingField: 16
     description: 
@@ -125,3 +187,7 @@ MonoBehaviour:
     <Prefab>k__BackingField: {fileID: 3770381602528085479, guid: bd00b5344f6ab4640a97542a4060f05b, type: 3}
     <requirements>k__BackingField: []
     <benefits>k__BackingField: []
+    <requiredBuildingIDs>k__BackingField: 
+    <requiredEvents>k__BackingField: []
+    <restrictPlacement>k__BackingField: 0
+    <sellValue>k__BackingField: 0
