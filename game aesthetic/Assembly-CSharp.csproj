@@ -129,7 +129,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\ResourceNode.cs" />
     <Compile Include="Assets\Scripts\House Scripts\InputManager.cs" />
-    <Compile Include="Assets\Scripts\ResourceSpawner.cs" />
     <Compile Include="Assets\Scripts\HealthTracker.cs" />
     <Compile Include="Assets\Scripts\UnitAttackState.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />

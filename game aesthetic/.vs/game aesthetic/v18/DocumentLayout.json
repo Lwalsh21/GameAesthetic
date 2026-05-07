@@ -19,10 +19,6 @@
       "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\house scripts\\previewsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|c:\\users\\liamw\\onedrive\\documents\\github\\gameaesthetic\\game aesthetic\\assets\\scripts\\resourcespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\resourcespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\assets\\scripts\\resourcenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\resourcenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -89,6 +85,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitSelectionBox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B19F010B-8284-77AB-D018-66E72914375E}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\UnitSelectionBox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\assets\\scripts\\resourcespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\resourcespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -108,14 +108,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\ResourceClusterSpawner.cs",
               "ToolTip": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\ResourceClusterSpawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\ResourceClusterSpawner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAswK8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-06T21:55:50.417Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 21,
               "Title": "ResourceSpawner.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\ResourceSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ResourceSpawner.cs",
@@ -123,12 +123,11 @@
               "RelativeToolTip": "Assets\\Scripts\\ResourceSpawner.cs",
               "ViewState": "AgIAAEcAAAAAAAAAAADwv1MAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T21:55:48.409Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-07T00:30:09.337Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "ResourceNode.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\ResourceNode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ResourceNode.cs",
@@ -140,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "ResourceManager.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\ResourceManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ResourceManager.cs",
@@ -152,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "SellMode.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\SellMode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SellMode.cs",
@@ -164,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "BuildingHealth.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\House Scripts\\BuildingHealth.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\House Scripts\\BuildingHealth.cs",
@@ -176,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "BuildMenuButton.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\House Scripts\\BuildMenuButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\House Scripts\\BuildMenuButton.cs",
@@ -188,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "DependencyManager.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\House Scripts\\DependencyManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\House Scripts\\DependencyManager.cs",
@@ -200,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "ObjectsDatabseSO.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\House Scripts\\ObjectsDatabseSO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\House Scripts\\ObjectsDatabseSO.cs",
@@ -212,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "ConstructionSlot.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\House Scripts\\ConstructionSlot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\House Scripts\\ConstructionSlot.cs",
@@ -232,8 +231,7 @@
               "RelativeToolTip": "Assets\\Scripts\\House Scripts\\PlacementState.cs",
               "ViewState": "AgIAALEAAAAAAAAAAAAUwNEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T21:55:48.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T21:55:48.467Z"
             },
             {
               "$type": "Document",
@@ -245,8 +243,7 @@
               "RelativeToolTip": "Assets\\Scripts\\House Scripts\\PreviewSystem.cs",
               "ViewState": "AgIAAFIAAAAAAAAAAAAMwHEAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T21:55:48.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T21:55:48.471Z"
             },
             {
               "$type": "Document",
@@ -258,12 +255,11 @@
               "RelativeToolTip": "Assets\\Scripts\\House Scripts\\ObjectPlacer.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAAAUwFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T21:55:48.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T21:55:48.473Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "ResourceDropOff.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\ResourceDropOff.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ResourceDropOff.cs",
@@ -275,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "WorkerTestAssign.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\WorkerTestAssign.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\WorkerTestAssign.cs",
@@ -287,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "CursorManager.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\CursorManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CursorManager.cs",
@@ -299,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "InputManager.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\House Scripts\\InputManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\House Scripts\\InputManager.cs",
@@ -311,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "WorkerGatherer.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\WorkerGatherer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\WorkerGatherer.cs",
@@ -323,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "BuySystem.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\House Scripts\\BuySystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\House Scripts\\BuySystem.cs",
@@ -335,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "UnitSelectionBox.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\UnitSelectionBox.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UnitSelectionBox.cs",
@@ -347,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "PlacementSystem.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\House Scripts\\PlacementSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\House Scripts\\PlacementSystem.cs",
@@ -359,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "PlacementDebugger.cs",
               "DocumentMoniker": "C:\\Users\\liamw\\OneDrive\\Documents\\GitHub\\GameAesthetic\\game aesthetic\\Assets\\Scripts\\House Scripts\\PlacementDebugger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\House Scripts\\PlacementDebugger.cs",

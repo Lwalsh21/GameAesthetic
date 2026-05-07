@@ -1483,7 +1483,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &367222833
 Transform:
   m_ObjectHideFlags: 0
@@ -3138,14 +3138,14 @@ MonoBehaviour:
   manaNodePrefab: {fileID: 894236696}
   foodNodePrefab: {fileID: 1635639382}
   woodClusters: 5
-  stoneClusters: 3
+  stoneClusters: 4
   foodClusters: 4
-  woodClusterSize: {x: 8, y: 15}
-  stoneClusterSize: {x: 4, y: 8}
-  foodClusterSize: {x: 5, y: 10}
-  manaCount: 20
+  woodClusterSize: {x: 4, y: 7}
+  stoneClusterSize: {x: 2, y: 5}
+  foodClusterSize: {x: 2, y: 5}
+  manaCount: 10
   spawnRadius: 120
-  minClusterSpacing: 20
+  minClusterSpacing: 10
   minNodeSpacing: 2
 --- !u!4 &802622461
 Transform:
@@ -4755,7 +4755,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1318565653
 Transform:
   m_ObjectHideFlags: 0
@@ -8376,7 +8376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2117969609720233532, guid: 9daa9de71b97bf748afa6ee41dc9d75d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7822921553981356299, guid: 9daa9de71b97bf748afa6ee41dc9d75d, type: 3}
       propertyPath: m_LocalPosition.x

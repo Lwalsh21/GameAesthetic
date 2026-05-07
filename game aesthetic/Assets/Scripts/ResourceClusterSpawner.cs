@@ -27,69 +27,85 @@ public class ResourceClusterSpawner : MonoBehaviour
     public float minNodeSpacing = 2f;
 
     private List<Vector3> clusterCenters = new List<Vector3>();
+    private Terrain terrain;
+
+    void Awake()
+    {
+        Debug.Log("<color=cyan>[Spawner]</color> Awake() running");
+
+        terrain = Terrain.activeTerrain;
+
+        if (terrain == null)
+        {
+            Debug.LogError("<color=red>[Spawner]</color> No active terrain found. Spawner DISABLED.");
+            enabled = false;
+        }
+    }
 
     private void Start()
     {
-        Debug.Log("ResourceClusterSpawner: Start() running");
-        // ⭐ Clustered resources
-        SpawnClusters(woodNodePrefab, woodClusters, woodClusterSize);
-        SpawnClusters(stoneNodePrefab, stoneClusters, stoneClusterSize);
-        SpawnClusters(foodNodePrefab, foodClusters, foodClusterSize);
+        Debug.Log("<color=cyan>[Spawner]</color> Start() running");
 
-        // ⭐ Mana spawns individually, NOT clustered
-        SpawnScatteredMana();
+        if (!enabled) return;
+
+        SafeSpawnClusters("Wood", woodNodePrefab, woodClusters, woodClusterSize);
+        SafeSpawnClusters("Stone", stoneNodePrefab, stoneClusters, stoneClusterSize);
+        SafeSpawnClusters("Food", foodNodePrefab, foodClusters, foodClusterSize);
+
+        SafeSpawnMana();
     }
 
-    // -------------------------
-    // CLUSTER SPAWNING
-    // -------------------------
-    private void SpawnClusters(GameObject prefab, int clusterCount, Vector2 clusterSizeRange)
+    // ----------------------------------------------------------
+    // SAFE CLUSTER SPAWNING
+    // ----------------------------------------------------------
+    private void SafeSpawnClusters(string label, GameObject prefab, int clusterCount, Vector2 clusterSizeRange)
     {
         if (prefab == null)
         {
-            Debug.LogWarning("[ResourceClusterSpawner] Missing prefab reference.");
+            Debug.LogWarning($"<color=yellow>[Spawner]</color> {label} prefab is NULL. Skipping.");
             return;
         }
 
+        if (clusterCount <= 0)
+        {
+            Debug.LogWarning($"<color=yellow>[Spawner]</color> {label} cluster count is 0. Skipping.");
+            return;
+        }
+
+        Debug.Log($"<color=green>[Spawner]</color> Spawning {clusterCount} {label} clusters...");
+
         for (int i = 0; i < clusterCount; i++)
         {
-            Vector3 center = GetValidClusterCenter();
+            if (!TryGetValidClusterCenter(out Vector3 center))
+            {
+                Debug.LogWarning($"<color=yellow>[Spawner]</color> Could not find valid center for {label} cluster {i}. Skipping.");
+                continue;
+            }
+
             clusterCenters.Add(center);
 
-            int nodesInCluster = Random.Range((int)clusterSizeRange.x, (int)clusterSizeRange.y + 1);
+            int nodes = Random.Range((int)clusterSizeRange.x, (int)clusterSizeRange.y + 1);
 
-            for (int j = 0; j < nodesInCluster; j++)
+            for (int j = 0; j < nodes; j++)
             {
-                Vector3 offset = Random.insideUnitSphere * 6f;
-                offset.y = 0;
+                Vector3 pos = center + Random.insideUnitSphere * 6f;
+                pos.y = terrain.SampleHeight(pos);
 
-                Vector3 pos = center + offset;
-
-                // ⭐ Snap to terrain
-                pos.y = Terrain.activeTerrain.SampleHeight(pos);
-
-                // ⭐ Avoid overlapping nodes
                 if (IsNodeTooClose(pos))
-                {
-                    j--;
                     continue;
-                }
 
                 Instantiate(prefab, pos, Quaternion.identity);
             }
         }
     }
 
-    private Vector3 GetValidClusterCenter()
+    private bool TryGetValidClusterCenter(out Vector3 center)
     {
-        Vector3 pos;
-        int attempts = 0;
+        center = Vector3.zero;
 
-        do
+        for (int attempts = 0; attempts < 50; attempts++)
         {
-            attempts++;
-
-            pos = transform.position + new Vector3(
+            Vector3 pos = transform.position + new Vector3(
                 Random.Range(-spawnRadius, spawnRadius),
                 0f,
                 Random.Range(-spawnRadius, spawnRadius)
@@ -99,9 +115,9 @@ public class ResourceClusterSpawner : MonoBehaviour
                 continue;
 
             bool tooClose = false;
-            foreach (var center in clusterCenters)
+            foreach (var c in clusterCenters)
             {
-                if (Vector3.Distance(center, pos) < minClusterSpacing)
+                if (Vector3.Distance(c, pos) < minClusterSpacing)
                 {
                     tooClose = true;
                     break;
@@ -109,11 +125,13 @@ public class ResourceClusterSpawner : MonoBehaviour
             }
 
             if (!tooClose)
-                return pos;
+            {
+                center = pos;
+                return true;
+            }
+        }
 
-        } while (attempts < 50);
-
-        return pos;
+        return false;
     }
 
     private bool IsNodeTooClose(Vector3 pos)
@@ -122,16 +140,18 @@ public class ResourceClusterSpawner : MonoBehaviour
         return hits.Length > 0;
     }
 
-    // -------------------------
-    // MANA SCATTER SPAWNING
-    // -------------------------
-    private void SpawnScatteredMana()
+    // ----------------------------------------------------------
+    // SAFE MANA SPAWNING
+    // ----------------------------------------------------------
+    private void SafeSpawnMana()
     {
         if (manaNodePrefab == null)
         {
-            Debug.LogWarning("[ResourceClusterSpawner] Missing mana prefab reference.");
+            Debug.LogWarning("<color=yellow>[Spawner]</color> Mana prefab is NULL. Skipping.");
             return;
         }
+
+        Debug.Log($"<color=green>[Spawner]</color> Spawning {manaCount} mana nodes...");
 
         for (int i = 0; i < manaCount; i++)
         {
@@ -141,22 +161,13 @@ public class ResourceClusterSpawner : MonoBehaviour
                 Random.Range(-spawnRadius, spawnRadius)
             );
 
-            // Keep inside circle
             if (Vector3.Distance(transform.position, pos) > spawnRadius)
-            {
-                i--;
                 continue;
-            }
 
-            // Snap to terrain
-            pos.y = Terrain.activeTerrain.SampleHeight(pos);
+            pos.y = terrain.SampleHeight(pos);
 
-            // Avoid overlapping other nodes
             if (IsNodeTooClose(pos))
-            {
-                i--;
                 continue;
-            }
 
             Instantiate(manaNodePrefab, pos, Quaternion.identity);
         }

@@ -398,7 +398,6 @@
 "Assets/Scripts/ResourceDropOff.cs"
 "Assets/Scripts/ResourceManager.cs"
 "Assets/Scripts/ResourceNode.cs"
-"Assets/Scripts/ResourceSpawner.cs"
 "Assets/Scripts/RTSCameraController.cs"
 "Assets/Scripts/SellMode.cs"
 "Assets/Scripts/SoundManager.cs"
