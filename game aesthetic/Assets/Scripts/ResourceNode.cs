@@ -11,10 +11,14 @@ public class ResourceNode : MonoBehaviour
 
     private void Start()
     {
-        // ⭐ Snap to terrain height
-        Vector3 pos = transform.position;
-        pos.y = Terrain.activeTerrain.SampleHeight(pos);
-        transform.position = pos;
+        // ⭐ Only snap NON-mana resources to terrain
+        if (resourceType != ResourceManager.ResourcesType.Mana)
+        {
+            Vector3 pos = transform.position;
+            pos.y = Terrain.activeTerrain.SampleHeight(pos);
+            transform.position = pos;
+        }
+        // ⭐ Mana wells keep the exact pivot height set by the spawner
     }
 
     // Called by workers or gathering systems

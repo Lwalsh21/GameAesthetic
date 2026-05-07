@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3299555841740487757}
   - component: {fileID: 3776409858469404563}
   - component: {fileID: 8278864864313159187}
+  - component: {fileID: 3358135053437048965}
   m_Layer: 0
   m_Name: MedievalLibrary
   m_TagString: Untagged
@@ -113,3 +114,17 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.001, z: 0.004}
   m_TimeToStationary: 0.5
+--- !u!114 &3358135053437048965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258681737683552535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2ac73b5156c50c4d9ce2b89558a19ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildCompleteSFX: {fileID: 8300000, guid: bbab5fadedcce3148b35836b0c11c5a6, type: 3}
+  volume: 0.2

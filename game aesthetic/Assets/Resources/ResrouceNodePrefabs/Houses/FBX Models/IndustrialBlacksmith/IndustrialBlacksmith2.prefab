@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1245880506078826728}
   - component: {fileID: 3875232941038481013}
   - component: {fileID: 7417845385219774964}
+  - component: {fileID: 1769848767873115329}
   m_Layer: 0
   m_Name: IndustrialBlacksmith2
   m_TagString: Untagged
@@ -113,3 +114,17 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -0.001}
   m_TimeToStationary: 0.5
+--- !u!114 &1769848767873115329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8872891875949623015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2ac73b5156c50c4d9ce2b89558a19ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildCompleteSFX: {fileID: 0}
+  volume: 1

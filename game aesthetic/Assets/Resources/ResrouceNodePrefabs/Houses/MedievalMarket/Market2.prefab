@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6931876271336040097}
   - component: {fileID: 8510504071356884583}
   - component: {fileID: 9108186961236287735}
+  - component: {fileID: 3174237247321987279}
   m_Layer: 0
   m_Name: Market2
   m_TagString: Untagged
@@ -113,3 +114,17 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.0050000004, y: 0.34800002, z: -0.020000001}
   m_TimeToStationary: 0.5
+--- !u!114 &3174237247321987279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6845836133224044616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2ac73b5156c50c4d9ce2b89558a19ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildCompleteSFX: {fileID: 8300000, guid: bbab5fadedcce3148b35836b0c11c5a6, type: 3}
+  volume: 0.2

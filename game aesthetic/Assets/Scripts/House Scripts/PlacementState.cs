@@ -114,6 +114,11 @@ public class PlacementState : IBuildingState
 
         placedObj.transform.position = basePos;
 
+        // ⭐ Play building complete SFX
+        BuildingCompleteSFX sfx = placedObj.GetComponent<BuildingCompleteSFX>();
+        if (sfx != null)
+            sfx.PlayCompleteSFX();
+
         // Determine which grid to write to
         GridData gridToWrite = data.restrictPlacement
             ? (GetAllFloorIDs().Contains(data.ID) ? floorData : furnitureData)
@@ -155,6 +160,7 @@ public class PlacementState : IBuildingState
 
         previewSystem.UpdatePosition(previewPos, false);
     }
+
 
     private List<int> GetAllFloorIDs()
     {

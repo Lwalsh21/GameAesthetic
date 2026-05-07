@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5334592377669752045}
   - component: {fileID: 7669204604214523234}
   - component: {fileID: 5346691104936718438}
+  - component: {fileID: 6832740809973786609}
   m_Layer: 0
   m_Name: IndustrialTower
   m_TagString: Untagged
@@ -113,3 +114,17 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.001, z: -0.002}
   m_TimeToStationary: 0.5
+--- !u!114 &6832740809973786609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985196138202010517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2ac73b5156c50c4d9ce2b89558a19ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildCompleteSFX: {fileID: 0}
+  volume: 1

@@ -9,6 +9,13 @@ public class ResourceClusterSpawner : MonoBehaviour
     public GameObject manaNodePrefab;
     public GameObject foodNodePrefab;
 
+    [Header("Terrain Reference (Assign in Inspector)")]
+    public Terrain terrain;
+
+    [Header("Collision Layers")]
+    public LayerMask blockingLayers;      // Wood/Stone/Food
+    public LayerMask manaBlockingLayers;  // Mana wells only
+
     [Header("Cluster Settings (Wood, Stone, Food)")]
     public int woodClusters = 5;
     public int stoneClusters = 3;
@@ -27,25 +34,18 @@ public class ResourceClusterSpawner : MonoBehaviour
     public float minNodeSpacing = 2f;
 
     private List<Vector3> clusterCenters = new List<Vector3>();
-    private Terrain terrain;
 
     void Awake()
     {
-        Debug.Log("<color=cyan>[Spawner]</color> Awake() running");
-
-        terrain = Terrain.activeTerrain;
-
         if (terrain == null)
         {
-            Debug.LogError("<color=red>[Spawner]</color> No active terrain found. Spawner DISABLED.");
+            Debug.LogError("<color=red>[Spawner]</color> No terrain assigned. DISABLED.");
             enabled = false;
         }
     }
 
     private void Start()
     {
-        Debug.Log("<color=cyan>[Spawner]</color> Start() running");
-
         if (!enabled) return;
 
         SafeSpawnClusters("Wood", woodNodePrefab, woodClusters, woodClusterSize);
@@ -56,31 +56,59 @@ public class ResourceClusterSpawner : MonoBehaviour
     }
 
     // ----------------------------------------------------------
+    // TERRAIN BOUNDS CHECK
+    // ----------------------------------------------------------
+    private bool IsInsideTerrain(Vector3 pos)
+    {
+        Vector3 tPos = terrain.transform.position;
+        Vector3 tSize = terrain.terrainData.size;
+
+        return pos.x >= tPos.x &&
+               pos.x <= tPos.x + tSize.x &&
+               pos.z >= tPos.z &&
+               pos.z <= tPos.z + tSize.z;
+    }
+
+    // ----------------------------------------------------------
+    // SPACING CHECKS
+    // ----------------------------------------------------------
+    private bool IsNodeTooClose(Vector3 pos)
+    {
+        Collider[] hits = Physics.OverlapSphere(
+            pos,
+            minNodeSpacing,
+            blockingLayers,
+            QueryTriggerInteraction.Ignore
+        );
+
+        return hits.Length > 0;
+    }
+
+    private bool IsManaTooClose(Vector3 pos)
+    {
+        // Mana wells only avoid overlapping other mana wells
+        Collider[] hits = Physics.OverlapSphere(
+            pos,
+            1.0f, // small radius so they can be close together
+            manaBlockingLayers,
+            QueryTriggerInteraction.Ignore
+        );
+
+        return hits.Length > 0;
+    }
+
+    // ----------------------------------------------------------
     // SAFE CLUSTER SPAWNING
     // ----------------------------------------------------------
     private void SafeSpawnClusters(string label, GameObject prefab, int clusterCount, Vector2 clusterSizeRange)
     {
-        if (prefab == null)
-        {
-            Debug.LogWarning($"<color=yellow>[Spawner]</color> {label} prefab is NULL. Skipping.");
+        if (prefab == null || clusterCount <= 0)
             return;
-        }
-
-        if (clusterCount <= 0)
-        {
-            Debug.LogWarning($"<color=yellow>[Spawner]</color> {label} cluster count is 0. Skipping.");
-            return;
-        }
-
-        Debug.Log($"<color=green>[Spawner]</color> Spawning {clusterCount} {label} clusters...");
 
         for (int i = 0; i < clusterCount; i++)
         {
             if (!TryGetValidClusterCenter(out Vector3 center))
-            {
-                Debug.LogWarning($"<color=yellow>[Spawner]</color> Could not find valid center for {label} cluster {i}. Skipping.");
                 continue;
-            }
 
             clusterCenters.Add(center);
 
@@ -89,7 +117,7 @@ public class ResourceClusterSpawner : MonoBehaviour
             for (int j = 0; j < nodes; j++)
             {
                 Vector3 pos = center + Random.insideUnitSphere * 6f;
-                pos.y = terrain.SampleHeight(pos);
+                pos.y = terrain.SampleHeight(pos) + terrain.transform.position.y;
 
                 if (IsNodeTooClose(pos))
                     continue;
@@ -110,6 +138,9 @@ public class ResourceClusterSpawner : MonoBehaviour
                 0f,
                 Random.Range(-spawnRadius, spawnRadius)
             );
+
+            if (!IsInsideTerrain(pos))
+                continue;
 
             if (Vector3.Distance(transform.position, pos) > spawnRadius)
                 continue;
@@ -134,24 +165,13 @@ public class ResourceClusterSpawner : MonoBehaviour
         return false;
     }
 
-    private bool IsNodeTooClose(Vector3 pos)
-    {
-        Collider[] hits = Physics.OverlapSphere(pos, minNodeSpacing);
-        return hits.Length > 0;
-    }
-
     // ----------------------------------------------------------
     // SAFE MANA SPAWNING
     // ----------------------------------------------------------
     private void SafeSpawnMana()
     {
         if (manaNodePrefab == null)
-        {
-            Debug.LogWarning("<color=yellow>[Spawner]</color> Mana prefab is NULL. Skipping.");
             return;
-        }
-
-        Debug.Log($"<color=green>[Spawner]</color> Spawning {manaCount} mana nodes...");
 
         for (int i = 0; i < manaCount; i++)
         {
@@ -161,12 +181,17 @@ public class ResourceClusterSpawner : MonoBehaviour
                 Random.Range(-spawnRadius, spawnRadius)
             );
 
+            if (!IsInsideTerrain(pos))
+                continue;
+
             if (Vector3.Distance(transform.position, pos) > spawnRadius)
                 continue;
 
-            pos.y = terrain.SampleHeight(pos);
+            // Mana spawns at pivot height (not terrain height)
+            pos.y = transform.position.y;
 
-            if (IsNodeTooClose(pos))
+            // Mana only avoids overlapping other mana wells
+            if (IsManaTooClose(pos))
                 continue;
 
             Instantiate(manaNodePrefab, pos, Quaternion.identity);

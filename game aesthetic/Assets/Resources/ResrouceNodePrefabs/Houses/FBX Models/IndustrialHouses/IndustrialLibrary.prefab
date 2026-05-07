@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 37984384885897634}
   - component: {fileID: -2247799543145965563}
   - component: {fileID: 7106774922533948995}
+  - component: {fileID: 8084200677706784869}
   m_Layer: 0
   m_Name: IndustrialLibrary
   m_TagString: Untagged
@@ -113,3 +114,17 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.020000001, y: 0.023000002, z: -0.446}
   m_TimeToStationary: 0.5
+--- !u!114 &8084200677706784869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3034285019316246473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2ac73b5156c50c4d9ce2b89558a19ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildCompleteSFX: {fileID: 0}
+  volume: 1
